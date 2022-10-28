@@ -1,9 +1,15 @@
 import React from "react";
 
+
+
 const Navbar = () => {
+
+ 
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  
+      <nav className="navbar navbar-expand-lg shadow  navbar-light bg-light fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             Navbar
@@ -20,6 +26,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse " id="navbarNav">
+           
             <ul className="navbar-nav mx-auto p-2">
               <li className="nav-item">
                 <a className="nav-link active" href="/">
@@ -43,17 +50,18 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="d-flex ">
+            <div className="d-flex  mx-5">
               <span className="mx-2">
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter"></i>
               </span>
               <span className="mx-2">
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
               </span>
               <span className="mx-2">
-              <i class="fa-brands fa-square-instagram"></i>
+              <i className="fa-brands fa-square-instagram"></i>
               </span>
             </div>
+            
           </div>
         </div>
       </nav>

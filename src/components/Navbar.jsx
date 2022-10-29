@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../Img/logo.jpg"
 
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg shadow  navbar-light bg-light fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Navbar
+            <img src={logo}  className="logo" alt="logo" /> Fashion Factory
           </a>
           <button
             className="navbar-toggler"
@@ -50,16 +50,8 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="d-flex  mx-5">
-              <span className="mx-2">
-                <i className="fa-brands fa-twitter"></i>
-              </span>
-              <span className="mx-2">
-              <i className="fa-brands fa-linkedin"></i>
-              </span>
-              <span className="mx-2">
-              <i className="fa-brands fa-square-instagram"></i>
-              </span>
+            <div className="d-flex  ">
+              user
             </div>
             
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const DealOftheWeak = () => {
+const ManAccessori = () => {
   return (
     <>
       <div className="container-fluid  DealOftheWeak perallexImg mx-auto text-center p-4">
@@ -25,9 +25,8 @@ const DealOftheWeak = () => {
                 more respectable you look
               </span>
             </h6>
-            <h4>
-              <span></span>
-            </h4>
+            
+<button className="btn btn-outline-warning text-capitalize">buy now</button>
           </div>
         </div>
       </div>
@@ -35,4 +34,4 @@ const DealOftheWeak = () => {
   );
 };
 
-export default DealOftheWeak;
+export default ManAccessori;

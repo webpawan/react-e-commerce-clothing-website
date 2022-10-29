@@ -3,81 +3,95 @@
   padding: 0;
 }
 
-body{
+body {
   font-size: 62.5%;
-  font-family: 'Philosopher', sans-serif;
+  font-family: "Philosopher", sans-serif;
 }
 
-.heading{
-  font-family: 'Tangerine', cursive;
+.heading {
+  font-family: "Tangerine", cursive;
   font-weight: bold;
   font-size: 3.5rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
-.special{
-  font-family: 'Tangerine', cursive;
+.special {
+  font-family: "Tangerine", cursive;
   font-size: 3rem;
   /* line-height: 1rem; */
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
-.underline{
-  border-bottom:.4rem solid rgba(205, 1, 1, 0.827);
+.underline {
+  border-bottom: 0.4rem solid rgba(205, 1, 1, 0.827);
 }
-
-
 
 /* global style end ---------------------------------------- */
 
-.navbar{
-    /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.545); */
+
+
+.navbar {
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.545); */
 }
 
-.nav-link{
-  font-size: .9rem;
+.logo{
+  width: 3rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
 }
 
 .myCarousel {
   margin: auto;
   min-height: 100vh;
-
 }
 
 .imgCarousel {
   min-height: 100vh;
   max-height: 100vh;
   object-fit: cover;
-
 }
 
 .HeaderLast img {
   height: 50vh;
 }
 
-
-
 /* header part end ------------------------- */
-
-
-
-
-
-
 
 /* dealof the weak ------------------------- */
 
-.DealOftheWeak{
+.DealOftheWeak {
   width: 95vw;
-  height: 70vh;
+  height: 60vh;
 }
 
-.perallexImg{
-  background:linear-gradient(rgba(0, 0, 49, 0.11) 30%,rgba(0, 0, 0, 0.521) 40%),url('./Img/sample/combo.jpg');
+.perallexImg {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.384) 60%
+    
+    ),
+    url("./Img/sample/combo.jpg");
   background-size: cover;
-  background-position:top ;
+  background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  
 }
 
+
+
+/* factor-------------- */
+
+
+.myIcon{
+  font-size: 2.5rem;
+}
+
+/* footer---------- */
+
+
+.footerIcons{
+font-size: 1.2rem;
+}

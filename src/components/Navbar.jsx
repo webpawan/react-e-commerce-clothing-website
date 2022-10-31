@@ -1,18 +1,14 @@
 import React from "react";
-import logo from "../Img/logo.jpg"
-
-
+import logo from "../Img/logo.jpg";
+// import ShopeUi from "./ShopeUi";
+// import { BrowserRouter } from "react-router-dom";
 const Navbar = () => {
-
- 
-
   return (
     <>
-  
       <nav className="navbar navbar-expand-lg shadow  navbar-light bg-light fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            <img src={logo}  className="logo" alt="logo" /> Fashion Factory
+            <img src={logo} className="logo" alt="logo" /> Fashion Factory
           </a>
           <button
             className="navbar-toggler"
@@ -26,7 +22,6 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse " id="navbarNav">
-           
             <ul className="navbar-nav mx-auto p-2">
               <li className="nav-item">
                 <a className="nav-link active" href="/">
@@ -50,10 +45,7 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="d-flex  ">
-              user
-            </div>
-            
+            <div className="d-flex  ">user</div>
           </div>
         </div>
       </nav>

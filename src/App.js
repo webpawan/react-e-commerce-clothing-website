@@ -6,6 +6,7 @@ import Factors from "./components/Factors";
 import HeaderLast from "./components/HeaderLast";
 import MostSelling from "./components/MostSelling";
 import Navbar from "./components/Navbar";
+import ShopeUi from "./components/ShopeUi";
 
 function App() {
   return (
@@ -15,9 +16,9 @@ function App() {
       <HeaderLast />
       <MostSelling />
       <ManAccessori />
-   
       <Factors />
       <Footer />
+      <ShopeUi />
     </>
   );
 }

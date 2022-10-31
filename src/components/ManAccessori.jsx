@@ -7,8 +7,8 @@ const ManAccessori = () => {
         <div className="row">
           <div className="col">
             <h2 className="text-light d-inline py-2 radius-5 heading underline text-capitalize">
-              {" "}
-              man accessori combo pack{" "}
+            
+              man accessori combo pack
             </h2>
 
             <h6 className="text-white my-5 w-50  mx-auto">

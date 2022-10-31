@@ -8,6 +8,7 @@ import MostSelling from "./components/MostSelling";
 import Navbar from "./components/Navbar";
 import ShopeUi from "./components/ShopeUi";
 import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Footer />
       <ShopeUi />
       <AboutUs/>
+      <Contact/>
     </>
   );
 }

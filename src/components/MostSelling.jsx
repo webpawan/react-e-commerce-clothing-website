@@ -4,9 +4,14 @@ const MostSelling = () => {
   return (
     <>
     <div className="container-fluid bg-light   p-4 mx-auto text-center">
-        <div className="row ">
-          <h1 className="mx-auto text-center my-3 col-10 heading">Most Selling Products</h1>
+        <div className="row my-5">
+          {/* <h1 className="mx-auto text-center my-3 col-10 heading"></h1> */}
+          <div className="col-11 mx-auto">
+<h1 className="text-capitalize heading underline d-inline px-2">Most Selling Products </h1>
+</div>
         </div>
+
+     
         {/* my gallery */}
 <div className="container mx-auto text-center py-2">
 <div className="row ">

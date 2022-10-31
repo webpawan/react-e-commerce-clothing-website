@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container-fluid mx-auto bg-dark text-light  p-5">
         <div className="row ">
           <div className="col-10 col-md-4 col-lg-3 text-right mx-auto">
-            <img src={logo} alt="" className="logo mx-2" /> Fashion Factory
+            <img src={logo} alt="logo" className="logo mx-2" /> Fashion Factory
 
             <p className='my-2'>Address: 60-49 Road 11378 New York</p>
           <p className="my-2">Phone: +65 11.188.888</p>
@@ -44,9 +44,9 @@ const Footer = () => {
           <div className="col-10 col-md-4 col-lg-3 text-right my-2 mx-auto">
             <h4 className="my-2">Join Our Newsletter Now</h4>
             <p className="my-2">Get E-mail updates about our latest shop and special offers.</p>
-            <div class="mb-3 ">
-  <label for="exampleFormControlInput1" class="form-label">Email address --</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+            <div className="mb-3 ">
+  <label  className="form-label" >Email address </label>
+  <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
   <button className="btn btn-outline-light my-2">sign in</button>
 </div>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
           <hr/>
     <div className="col d-flex justify-content-between align-items-center flex-wrap">
     <p className="d-inline ">Copyright ©2022 All rights reserved Nahi ha By <span className="text-capitalize">( pawan saini ) </span>( 😂 i am unemployed,currently i am looking for job)</p>
-          <img src={icons} alt="" className="img-fluid " />
+          <img src={icons} alt="logo" className="img-fluid " />
     </div>
         </div>
       </div>

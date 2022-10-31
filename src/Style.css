@@ -15,6 +15,13 @@ body {
   letter-spacing: 0.2rem;
 }
 
+.heading-1 {
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
 .special {
   font-family: "Tangerine", cursive;
   font-size: 3rem;
@@ -26,6 +33,9 @@ body {
   border-bottom: 0.4rem solid rgba(205, 1, 1, 0.827);
 }
 
+.underline-1 {
+  border-bottom: 0.2rem solid rgba(205, 1, 1, 0.827);
+}
 /* global style end ---------------------------------------- */
 
 
@@ -94,4 +104,15 @@ body {
 
 .footerIcons{
 font-size: 1.2rem;
+}
+
+/* ////////////////////about us //////////////////// */
+
+
+.storeImg{
+ background: url(./Img/Team/store.jpg);
+height: 80vh;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }

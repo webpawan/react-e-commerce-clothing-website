@@ -7,6 +7,7 @@ import HeaderLast from "./components/HeaderLast";
 import MostSelling from "./components/MostSelling";
 import Navbar from "./components/Navbar";
 import ShopeUi from "./components/ShopeUi";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Factors />
       <Footer />
       <ShopeUi />
+      <AboutUs/>
     </>
   );
 }

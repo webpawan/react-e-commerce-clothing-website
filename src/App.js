@@ -1,30 +1,22 @@
 import React from "react";
-import Carousel from "./components/Carousel";
-import ManAccessori from "./components/ManAccessori";
-import Footer from "./components/Footer";
-import Factors from "./components/Factors";
-import HeaderLast from "./components/HeaderLast";
-import MostSelling from "./components/MostSelling";
-import Navbar from "./components/Navbar";
-import ShopeUi from "./components/ShopeUi";
+import Home from "./components/Home";
+import Shope from "./components/Shop";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
+import {BrowserRouter as Router , Routes,Route} from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Carousel />
-      <HeaderLast />
-      <MostSelling />
-      <ManAccessori />
-      <Factors />
-      <Footer />
-      <ShopeUi />
-      <AboutUs/>
-      <Contact/>
+    <Router>
+<Routes>
+  <Route path="/" element={<Home/>}/>
+  <Route path="/shop" element={<Shope/>}/>
+  <Route path="/about" element={<AboutUs/>}/>
+  <Route path="/contact" element={<Contact/>}/>
+</Routes>
+    </Router>
     </>
   );
 }
-
 export default App;

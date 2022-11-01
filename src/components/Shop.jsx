@@ -1,15 +1,19 @@
 import React from "react";
-// import Navbar from '../Navbar'
-import img from "../Img/sample/img2.jpg";
+
+import img from "../Img/sam2.jpg";
 import Footer from "./Footer";
-const ShopeUi = () => {
+import Navbar from "./HomeComponents/Navbar";
+const Shop = () => {
   return (
     <>
-      {/* <h1 className='text-center my-4'>fg</h1> */}
-
+    <div className="container my-5">
+    <Navbar/>
+    </div>
       <div className="container-fluid  ">
+   
+
         <div className="row ">
-          <div className="col-11  mx-auto text-center my-5">
+          <div className="col-11  mx-auto text-center mt-5">
             <h1 className="mx-auto px-3 heading underline d-inline">shope</h1>
           </div>
         </div>
@@ -195,4 +199,4 @@ const ShopeUi = () => {
   );
 };
 
-export default ShopeUi;
+export default Shop;

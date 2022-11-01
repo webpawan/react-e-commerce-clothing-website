@@ -1,13 +1,17 @@
 import React from "react";
-import per1 from '../Img/Team/img1.jpg'
-import per2 from '../Img/Team/img2.jpg'
-import per3 from '../Img/Team/img3.jpg'
-import per4 from '../Img/Team/img4.jpg'
+import per1 from '../Img/team1.jpg'
+import per2 from '../Img/team2.jpg'
+import per3 from '../Img/team3.jpg'
+import per4 from '../Img/team4.jpg'
 import Footer from './Footer'
+import Navbar from "./HomeComponents/Navbar";
 const AboutUs = () => {
   return (
     <>
-      <div className="container my-5 mx-auto">
+   <div className="container py-5">
+    <Navbar/>
+    </div>
+      <div className="container mx-auto my-3">
         <div className="row mx-atuo text-center">
 <div className="col-11 mx-auto">
 <h1 className="text-capitalize heading underline d-inline px-2">about us</h1>

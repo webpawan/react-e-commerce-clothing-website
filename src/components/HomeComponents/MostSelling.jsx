@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../Img/sample/img1.jpg'
+
 const MostSelling = () => {
   return (
     <>
@@ -16,24 +16,24 @@ const MostSelling = () => {
 <div className="container mx-auto text-center py-2">
 <div className="row ">
   <div className="col-lg-3 col-md-4 col-10 mx-auto my-2">
-    <img src={img} alt="my image87" className='img-fluid'/>
+    <img src='img/sam1.jpg' alt="my image87" className='img-fluid'/>
   </div>
   <div className="col-lg-3 col-md-4 col-10 mx-auto my-2">
-    <img src={img} alt="my image1" className='img-fluid'/>
+    <img src='img/sam1.jpg' alt="my image1" className='img-fluid'/>
   </div> <div className="col-lg-3 col-md-4 col-10 mx-auto my-2">
-    <img src={img} alt="my image2" className='img-fluid'/>
+    <img src='img/sam1.jpg' alt="my image2" className='img-fluid'/>
   </div> <div className="col-lg-3 col-md-4 col-10 mx-auto my-2">
-    <img src={img} alt="my image3" className='img-fluid'/>
+    <img src='img/sam1.jpg' alt="my image3" className='img-fluid'/>
   </div>
   <div className="col-lg-3 col-md-4 col-10 mx-auto my-2">
-    <img src={img} alt="my image4" className='img-fluid'/>
+    <img src='img/sam1.jpg' alt="my image4" className='img-fluid'/>
   </div> <div className="col-lg-3 col-md-4 col-10 mx-auto my-2">
-    <img src={img} alt="my image5" className='img-fluid'/>
+    <img src='img/sam1.jpg' alt="my image5" className='img-fluid'/>
   </div> <div className="col-lg-3 col-md-4 col-10 mx-auto my-2">
-    <img src={img} alt="my image6" className='img-fluid'/>
+    <img src='img/sam1.jpg' alt="my image6" className='img-fluid'/>
   </div>
   <div className="col-lg-3 col-md-4 col-10 mx-auto my-2">
-    <img src={img} alt="my image7" className='img-fluid'/>
+    <img src='img/sam1.jpg' alt="my image7" className='img-fluid'/>
   </div>
 </div>
 </div>

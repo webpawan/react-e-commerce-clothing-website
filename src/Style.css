@@ -83,7 +83,7 @@ body {
       rgba(0, 0, 0, 0.384) 60%
     
     ),
-    url("./Img/sample/combo.jpg");
+    url("./Img/combo.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -110,7 +110,7 @@ font-size: 1.2rem;
 
 
 .storeImg{
- background: url(./Img/Team/store.jpg);
+ background: url(./Img/bg10.jpg);
 height: 80vh;
 background-size: cover;
 background-position: center;

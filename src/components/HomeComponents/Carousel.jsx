@@ -1,8 +1,4 @@
 import React from "react";
-import bg1 from "../Img/bg1.jpg";
-import bg2 from "../Img/bg2.jpg";
-import bg3 from "../Img/bg3.jpg";
-import bg4 from "../Img/bg4.jpg";
 
 const Carousel = () => {
   return (
@@ -16,19 +12,19 @@ const Carousel = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src={bg1}
+                src='img/bg1.jpg'
                 className="d-block w-100 text-center imgCarousel"
                 alt="im1"
               />
             </div>
             <div className="carousel-item">
-              <img src={bg2} className="d-block w-100 imgCarousel " alt="im2" />
+              <img src='img/bg2.jpg' className="d-block w-100 imgCarousel " alt="im2" />
             </div>
             <div className="carousel-item">
-              <img src={bg3} className="d-block w-100 imgCarousel " alt="im2" />
+              <img src='img/bg3.jpg' className="d-block w-100 imgCarousel " alt="im2" />
             </div>
             <div className="carousel-item">
-              <img src={bg4} className="d-block w-100 imgCarousel" alt="img3" />
+              <img src='img/bg4.jpg' className="d-block w-100 imgCarousel" alt="img3" />
             </div>
           </div>
           <button

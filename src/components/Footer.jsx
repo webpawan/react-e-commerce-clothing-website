@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../Img/logo.jpg";
-import icons from '../Img/icons.png'
+import logo from "../img/logo.jpg";
+import icons from '../img/icons.png'
 const Footer = () => {
   return (
     <>

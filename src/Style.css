@@ -36,15 +36,18 @@ body {
 .underline-1 {
   border-bottom: 0.2rem solid rgba(205, 1, 1, 0.827);
 }
+
+.aactive {
+  color: red;
+  background-color: red;
+}
 /* global style end ---------------------------------------- */
-
-
 
 .navbar {
   /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.545); */
 }
 
-.logo{
+.logo {
   width: 3rem;
 }
 
@@ -67,6 +70,60 @@ body {
   height: 50vh;
 }
 
+.img_container__header {
+  position: relative;
+  width: 100%;
+}
+
+.img_container__header:hover img{
+ filter: brightness(60%);
+  transition: all .5s;
+  z-index: -10;
+}
+
+.navLink__header {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 0.3s;
+  z-index: 10;
+}
+.img_container__header:hover .navLink__header {
+  opacity: 1;
+  bottom: 50%;
+}
+
+.details_header__products {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+
+  transform: translate(-50%, -0%);
+  width: inherit;
+  opacity: 0;
+  transition: all 0.5s;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: bottom;
+  align-self: center;
+}
+
+.details_header__products > p {
+  color: white;
+}
+
+.img_container__header:hover .details_header__products {
+  opacity: 1;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  font-size: 1rem;
+}
+
 /* header part end ------------------------- */
 
 /* dealof the weak ------------------------- */
@@ -81,47 +138,40 @@ body {
       0deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.384) 60%
-    
     ),
-    url("./Img/combo.jpg");
+    url(./img/combo.jpg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-
-
 /* factor-------------- */
 
-
-.myIcon{
+.myIcon {
   font-size: 2.5rem;
 }
 
 /* footer---------- */
 
-
-.footerIcons{
-font-size: 1.2rem;
+.footerIcons {
+  font-size: 1.2rem;
 }
 
 /* ////////////////////about us //////////////////// */
 
-
-.storeImg{
- background: url(./Img/bg10.jpg);
-height: 80vh;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
+.storeImg {
+  background: url(./img/bg10.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
 
 /* //////////////////////contact/////////////// */
 
-.mymap{
-height: 50vh;
-width: 80vw;
-margin: 0 auto;
+.mymap {
+  height: 50vh;
+  width: 80vw;
+  margin: 0 auto;
 }

@@ -5,9 +5,12 @@ import Footer from "./Footer";
 import HeaderLast from "./HomeComponents/HeaderLast";
 import ManAccessori from "./HomeComponents/ManAccessori";
 import MostSelling from "./HomeComponents/MostSelling";
-import Navbar from "./HomeComponents/Navbar";
+import Navbar from "./Navbar";
 
 const Home = () => {
+
+ 
+
   return (
     <>
       <Navbar />
@@ -17,6 +20,7 @@ const Home = () => {
       <ManAccessori />
       <Factors />
       <Footer />
+      
     </>
   );
 };

@@ -4,6 +4,7 @@ import App from "./App";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.min'
 import './Style.css'
+import { AppProvider } from "./components/Context/ProductContext";
 // ReactDOM.render(
 // <>
 // <App/>
@@ -16,4 +17,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root')
 )
 
-root.render(<App/>)
+root.render(
+<AppProvider>
+<App/>
+</AppProvider>
+
+)

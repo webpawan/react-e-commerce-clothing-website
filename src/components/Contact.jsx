@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "./Footer";
-import Navbar from "./HomeComponents/Navbar";
+import Navbar from "./Navbar";
 
 const Contact = () => {
   return (
     <>
-<div className="container py-4 bg-dark">
-<Navbar/>
-</div>
+      <div className="container py-4 bg-dark">
+        <Navbar />
+      </div>
       <div className="container mx-auto my-4">
         <div className="row mx-atuo text-center">
           <div className="col-11 mx-auto">
@@ -61,7 +61,7 @@ const Contact = () => {
               <div className="col-10 col-lg-6 my-2">
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleInputEmail1"
                   placeholder="email"
                 />

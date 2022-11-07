@@ -1,17 +1,15 @@
 import React from "react";
 
-import img from "../Img/sam2.jpg";
+import img from "../img/sam2.jpg";
 import Footer from "./Footer";
-import Navbar from "./HomeComponents/Navbar";
+import Navbar from "./Navbar";
 const Shop = () => {
   return (
     <>
-    <div className="container my-5">
-    <Navbar/>
-    </div>
+      <div className="container my-5">
+        <Navbar />
+      </div>
       <div className="container-fluid  ">
-   
-
         <div className="row ">
           <div className="col-11  mx-auto text-center mt-5">
             <h1 className="mx-auto px-3 heading underline d-inline">shope</h1>

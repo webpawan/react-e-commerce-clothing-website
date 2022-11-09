@@ -5,6 +5,7 @@ import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import {BrowserRouter as Router , Routes,Route} from 'react-router-dom';
 import Error from "./components/Error";
+import SingleProducts from "./components/SingleProducts";
 
 
 // https://fakestoreapi.com/products/category/men's clothing
@@ -22,6 +23,7 @@ function App() {
   <Route path="/products" element={<Products/>}/>
   <Route path="/about" element={<AboutUs/>}/>
   <Route path="/contact" element={<Contact/>}/>
+  <Route path='/singleproduct/:id' element={<SingleProducts/>} />
   <Route path='*' element={<Error/>} />
 </Routes>
     </Router>

@@ -16,16 +16,29 @@ const productreduces = (CurState, action) => {
       };
 
     case "Set_api_data":
-      const featureData = action.payload.filter((CurEle)=>{
+      const featureData = action.payload.filter((CurEle) => {
         return CurEle.feature !== true;
-      })
+      });
 
-      return{
+      return {
         ...CurState,
-        isLoading:false,
+        isLoading: false,
         products: action.payload,
         featureProducts: featureData,
-      }
+      };
+
+    case "SET_SINGLE_LOADING":
+      return {
+        ...CurState,
+        isSingleLoading: true,
+      };
+
+    case "SET_SINGLE_PRODUCT":
+      return {
+        ...CurState,
+        isSingleLoading: false,
+        singleProducts: action.payload,
+      };
 
     case "api_error":
       return {
@@ -33,9 +46,16 @@ const productreduces = (CurState, action) => {
         isLoading: false,
         isError: true,
       };
-      
-      default :
-      return CurState
+
+    case "SET_SINGLE_ERROR":
+      return {
+        ...CurState,
+        isSingleLoading: false,
+        isError: true,
+      };
+
+    default:
+      return CurState;
   }
 };
 

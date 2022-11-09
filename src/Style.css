@@ -8,6 +8,7 @@ body {
   font-family: "Philosopher", sans-serif;
 }
 
+
 .heading {
   font-family: "Tangerine", cursive;
   font-weight: bold;
@@ -21,6 +22,8 @@ body {
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
 }
+
+
 
 .special {
   font-family: "Tangerine", cursive;
@@ -36,6 +39,11 @@ body {
 .underline-1 {
   border-bottom: 0.2rem solid rgba(205, 1, 1, 0.827);
 }
+
+.pera{
+  font-size: .9rem;
+}
+
 
 .aactive {
   color: red;
@@ -124,7 +132,42 @@ body {
   font-size: 1rem;
 }
 
+
+
+
+
 /* header part end ------------------------- */
+
+/* single product start////////////////////////////// */
+
+.SingleProduct__imgContainer{
+height: 50vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.SingleProduct__imgContainer img{
+  height: 100%;
+  background-size: cover;
+
+}
+
+.red{
+  background-color: red;
+}
+
+.singleProduct__count{
+  display: flex;
+  background-color: red;
+}
+
+.counter{
+  display: flex;
+}
+
+/* single product end////////////////////////////// */
+
 
 /* dealof the weak ------------------------- */
 

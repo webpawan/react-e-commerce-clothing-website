@@ -1,7 +1,5 @@
 import React from "react";
 import { useProduct } from "../Context/ProductContext";
-// import { useInView } from "framer-motion"
-import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 
@@ -17,10 +15,10 @@ const HeaderLast = () => {
     <>
       <div className="container-fluid HeaderLast mb-5">
         <div className="row  text-center">
-         {featureProducts.map((curElem)=>{
+         {featureProducts.map((curElem,index)=>{
           const {id,name,price,img} = curElem;
         
-return  <motion.div className=" my-4 mx-auto col-12 col-sm-6 col-lg-3  " key={id} >
+return  <div className=" my-4 mx-auto col-12 col-sm-6 col-lg-3" key={index} >
 <div className="img_container__header text-center" 
    >
 <button className="navLink__header text-center btn btn-dark ">
@@ -32,7 +30,7 @@ return  <motion.div className=" my-4 mx-auto col-12 col-sm-6 col-lg-3  " key={id
   <p>{price}</p>
  </div>
 </div>
-</motion.div>
+</div>
          })}
         </div>
       </div>

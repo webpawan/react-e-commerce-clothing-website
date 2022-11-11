@@ -4,7 +4,6 @@ import per2 from "../img/team2.jpg";
 import per3 from "../img/team3.jpg";
 import per4 from "../img/team4.jpg";
 import { useProduct } from "./Context/ProductContext";
-
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 

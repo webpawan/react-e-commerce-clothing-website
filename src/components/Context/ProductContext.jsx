@@ -5,7 +5,7 @@ import reducer from "../reducer/productreduces";
 
 const AppContext = createContext();
 
-// const api = "https://fakestoreapi.com/products/category/men's clothing";
+
 const api = "http://localhost:3000/data";
 const initialState = {
   isLoading: false,
@@ -24,6 +24,7 @@ const AppProvider = ({ children }) => {
     try {
       const res = await axios.get(url);
       const products = await res.data;
+      
       dispatch({ type: "Set_api_data", payload: products });
     } catch (error) {
       dispatch({ type: "api_error" });

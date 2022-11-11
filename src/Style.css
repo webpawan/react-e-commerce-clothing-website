@@ -51,9 +51,6 @@ body {
 }
 /* global style end ---------------------------------------- */
 
-.navbar {
-  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.545); */
-}
 
 .logo {
   width: 3rem;
@@ -141,7 +138,7 @@ body {
 /* single product start////////////////////////////// */
 
 .SingleProduct__imgContainer{
-height: 50vh;
+height: 60vh;
 display: flex;
 justify-content: center;
 align-items: center;

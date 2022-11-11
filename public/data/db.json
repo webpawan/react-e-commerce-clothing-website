@@ -1,61 +1,104 @@
- 
-
 {
-  "data":[
-
+  "data": [
     {
-      "id":1,
-      "name":"myshirt1",
-      "company":"apple",
-      "price":500,
-      "color":[
-        "red",
-        "green"
-      ],
-      "img":"img/img1.webp",
-      "desc":"o bhai",
-      "category":"pants",
-      "featured":true
+      "id": 1,
+      "name": "myshirt1",
+      "company": "apple",
+      "price": 500,
+      "color": ["red", "green"],
+      "img": "/img/img1.webp",
+      "desc": "o bhai",
+      "category": "pants",
+      "featured": true,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img1.webp"
+        }
+      ]
     },
     {
-      "id":2,
-      "name":"myshirt1",
-      "company":"apple",
-      "price":500,
-      "color":[
-        "red",
-        "green"
-      ],
-      "img":"img/img2.webp",
-      "desc":"o bhai",
-      "category":"pants",
-      "featured":true
-    },  {
-      "id":3,
-      "name":"myshirt1",
-      "company":"apple",
-      "price":500,
-      "color":[
-        "red",
-        "green"
-      ],
-      "img":"img/img4.jpg",
-      "desc":"o bhai",
-      "category":"pants",
-      "featured":true
-    },  {
-      "id":4,
-      "name":"myshirt1",
-      "company":"apple",
-      "price":500,
-      "color":[
-        "red",
-        "green"
-      ],
-      "img":"img/sam1.jpg",
-      "desc":"o bhai",
-      "category":"pants",
-      "featured":true
+      "id": 2,
+      "name": "myshirt2",
+      "company": "apple",
+      "price": 500,
+      "color": ["red", "green"],
+      "img": "/img/bg1.jpg",
+      "desc": "o bhai",
+      "category": "pants",
+      "featured": true,
+      "imgs": [
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "myshirt1",
+      "company": "apple",
+      "price": 500,
+      "color": ["red", "green"],
+      "img": "/img/img4.jpg",
+      "desc": "o bhai",
+      "category": "pants",
+      "featured": true,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img3.webp"
+        },
+        {
+          "img": "/img/img4.webp"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "myshirt1",
+      "company": "apple",
+      "price": 500,
+      "color": ["red", "green"],
+      "img": "/img/sam1.jpg",
+      "desc": "o bhai",
+      "category": "pants",
+      "featured": true,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img3.webp"
+        },
+        {
+          "img": "/img/img4.webp"
+        }
+      ]
     }
   ]
-  }
+}

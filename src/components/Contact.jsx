@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="row mx-atuo text-center">
           <div className="col-11 mx-auto">
             <h1 className="text-capitalize heading underline d-inline px-2">
-              contact{" "}
+              contact
             </h1>
           </div>
         </div>

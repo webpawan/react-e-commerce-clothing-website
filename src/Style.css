@@ -150,8 +150,14 @@ align-items: center;
 
 }
 
-.red{
-  background-color: red;
+
+
+
+.checkColor{
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: .1rem;
 }
 
 .singleProduct__count{

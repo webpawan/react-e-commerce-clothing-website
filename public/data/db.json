@@ -10,6 +10,14 @@
       "desc": "o bhai",
       "category": "pants",
       "featured": true,
+      "reviews":60,
+      "stars":3.5,
+      "colors":[
+"btn-danger",
+"btn-warning",
+"btn-primary",
+"btn-dark"
+      ],
       "imgs": [
         {
           "img": "/img/img1.webp"
@@ -35,6 +43,8 @@
       "desc": "o bhai",
       "category": "pants",
       "featured": true,
+      "reviews":60,
+      "stars":3.5,
       "imgs": [
         {
           "img": "/img/bg1.jpg"
@@ -60,6 +70,8 @@
       "desc": "o bhai",
       "category": "pants",
       "featured": true,
+      "reviews":60,
+      "stars":3.5,
       "imgs": [
         {
           "img": "/img/img1.webp"
@@ -85,6 +97,8 @@
       "desc": "o bhai",
       "category": "pants",
       "featured": true,
+      "reviews":60,
+      "stars":3.5,
       "imgs": [
         {
           "img": "/img/img1.webp"
@@ -93,10 +107,10 @@
           "img": "/img/img2.webp"
         },
         {
-          "img": "/img/img3.webp"
+          "img": "/img/sam1.jpg"
         },
         {
-          "img": "/img/img4.webp"
+          "img": "/img/sam2.jpg"
         }
       ]
     }

@@ -5,6 +5,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.min'
 import './Style.css'
 import { AppProvider } from "./components/Context/ProductContext";
+import { FilterContextProvider } from "./components/Context/FilterContext";
 // ReactDOM.render(
 // <>
 // <App/>
@@ -19,7 +20,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
 <AppProvider>
+<FilterContextProvider>
 <App/>
+</FilterContextProvider>
 </AppProvider>
 
 )

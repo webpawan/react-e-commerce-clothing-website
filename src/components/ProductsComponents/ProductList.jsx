@@ -1,15 +1,17 @@
 import React from 'react'
-import { useFileContext } from '../Context/FilterContext';
-import img from "./sam1.jpg";
+import { NavLink } from 'react-router-dom';
 
-const ProductList = () => {
-  const {filter_products} = useFileContext();
+const ProductList = ({filter_products}) => {
   
+
   return (
     <>
      <div className="col-11 col-md-8 mx-auto">
             <div className="row">
-              <div className="col-11 col-md-6 col-lg-4 mb-3 mx-auto">
+              {filter_products.map((Productsdata)=>{
+                const {id,name,desc,img} = Productsdata;
+                return (
+                  <div className="col-11 col-md-6 col-lg-4 mb-3 mx-auto " key={id}>
                 <div className="card">
                   <img
                     src={img}
@@ -18,17 +20,18 @@ const ProductList = () => {
                     style={{ width: "10rem" }}
                   />
                   <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">{name}</h5>
                     <p className="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                     {desc}
                     </p>
-                    <a href="/" className="btn btn-primary">
-                      Go somewhere
-                    </a>
+                    <NavLink to={`/singleproduct/${id}`} className="btn btn-outline-dark">
+go to product
+                    </NavLink>
                   </div>
                 </div>
               </div>
+                )
+              })}
               
             </div>
           </div>

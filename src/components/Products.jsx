@@ -4,11 +4,15 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import FilterSection from "./ProductsComponents/FilterSection";
 import ProductList from "./ProductsComponents/ProductList";
+import { useFileContext } from "../components/Context/FilterContext";
+import SortingCom from "./Filters/SortingCom";
 const Shop = () => {
+  const {filter_products,sorting} = useFileContext();
+  
   return (
     <>
       <div className="container my-5">
-        <Navbar />
+        <Navbar  />
       </div>
       <div className="container-fluid  ">
         <div className="row ">
@@ -16,9 +20,11 @@ const Shop = () => {
             <h1 className="mx-auto px-3 heading underline d-inline">shope</h1>
           </div>
         </div>
-        <div className="row p-5">
-          <FilterSection/>
-         <ProductList/>
+
+        <div className="row p-5 ">
+          <SortingCom SortingFun={sorting}/>
+          <FilterSection />
+         <ProductList filter_products={filter_products}/>
         </div>
         <nav aria-label="Page navigation example">
           <ul className="pagination justify-content-center">

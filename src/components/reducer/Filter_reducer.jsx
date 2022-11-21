@@ -7,19 +7,25 @@ const Filter_reducer = (state,action) => {
     return{
         ...state,
     filter_products:[...action.payload],
-    all_products:[...action.payload ]   
-    }
+    all_products:[...action.payload ] ,
+    };
+
+    case "GET_SORT_VALUE":
+        let userSortValue = document.getElementById("sort");
+        let sort_value = userSortValue.options[userSortValue.selectedIndex].value;
+        
+        // console.log(sort_value);
+        return{
+            ...state,
+            // sorting_value:sort_value,
+        }
     
         default:
-            break;
+            return state;
     }
     
 
-  return (
-    <>
-
-    </>
-  )
+ 
 }
 
 export default Filter_reducer

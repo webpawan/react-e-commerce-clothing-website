@@ -3,30 +3,27 @@ import Home from "./components/Home";
 import Products from "./components/Products";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
-import {BrowserRouter as Router , Routes,Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Error from "./components/Error";
 import SingleProducts from "./components/SingleProducts";
-
-
-// https://fakestoreapi.com/products/category/men's clothing
-// https://fakestoreapi.com/products/category/women's clothing
-
-
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
-
   return (
     <>
-    <Router>
-<Routes>
-  <Route path="/" element={<Home/>}/>
-  <Route path="/products" element={<Products/>}/>
-  <Route path="/about" element={<AboutUs/>}/>
-  <Route path="/contact" element={<Contact/>}/>
-  <Route path='/singleproduct/:id' element={<SingleProducts/>} />
-  <Route path='*' element={<Error/>} />
-</Routes>
-    </Router>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/singleproduct/:id" element={<SingleProducts />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }

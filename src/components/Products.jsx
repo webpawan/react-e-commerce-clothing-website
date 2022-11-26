@@ -1,18 +1,15 @@
 import React from "react";
-
-import Footer from "./Footer";
-import Navbar from "./Navbar";
 import FilterSection from "./ProductsComponents/FilterSection";
 import ProductList from "./ProductsComponents/ProductList";
 import { useFileContext } from "../components/Context/FilterContext";
 import SortingCom from "./Filters/SortingCom";
 const Shop = () => {
   const {filter_products,sorting} = useFileContext();
-  
+
   return (
     <>
       <div className="container my-5">
-        <Navbar  />
+        {/* <Navbar  /> */}
       </div>
       <div className="container-fluid  ">
         <div className="row ">
@@ -25,6 +22,7 @@ const Shop = () => {
           <SortingCom SortingFun={sorting}/>
           <FilterSection />
          <ProductList filter_products={filter_products}/>
+         {console.log(filter_products)}
         </div>
         <nav aria-label="Page navigation example">
           <ul className="pagination justify-content-center">
@@ -56,7 +54,7 @@ const Shop = () => {
           </ul>
         </nav>
       </div>
-      <Footer />
+     
     </>
   );
 };

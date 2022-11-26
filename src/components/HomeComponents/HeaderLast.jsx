@@ -3,7 +3,6 @@ import { useProduct } from "../Context/ProductContext";
 import { NavLink } from "react-router-dom";
 
 
-
 const HeaderLast = () => {
   const { isLoading, featureProducts } = useProduct();
 

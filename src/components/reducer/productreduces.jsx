@@ -43,7 +43,7 @@ const productreduces = (CurState, action) => {
     case "api_error":
       return {
         ...CurState,
-        isLoading: false,
+        // isLoading: false,
         isError: true,
       };
 

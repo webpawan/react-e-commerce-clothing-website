@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "name": "myshirt1",
+      "name": "ashirt1",
       "company": "apple",
       "price": 500,
       "color": ["red", "green"],
@@ -35,9 +35,9 @@
     },
     {
       "id": 2,
-      "name": "myshirt2",
+      "name": "xshirt2",
       "company": "apple",
-      "price": 500,
+      "price": 100,
       "color": ["red", "green"],
       "img": "/img/bg1.jpg",
       "desc": "o bhai",
@@ -62,9 +62,9 @@
     },
     {
       "id": 3,
-      "name": "myshirt1",
+      "name": "b",
       "company": "apple",
-      "price": 500,
+      "price": 1000,
       "color": ["red", "green"],
       "img": "/img/img4.jpg",
       "desc": "o bhai",

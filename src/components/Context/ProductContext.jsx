@@ -2,9 +2,7 @@ import axios from "axios";
 import { useEffect, useReducer, useContext, createContext } from "react";
 import reducer from "../reducer/productreduces";
 
-
 const AppContext = createContext();
-
 
 const api = "http://localhost:3000/data";
 const initialState = {
@@ -15,7 +13,7 @@ const initialState = {
   isSingleLoading: false,
   singleProducts: {},
 };
-
+// ----------------------------------------------------main function
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -24,7 +22,6 @@ const AppProvider = ({ children }) => {
     try {
       const res = await axios.get(url);
       const products = await res.data;
-      
       dispatch({ type: "Set_api_data", payload: products });
     } catch (error) {
       dispatch({ type: "api_error" });
@@ -55,10 +52,10 @@ const AppProvider = ({ children }) => {
   );
 };
 
-// custome hook start////////////////////////////////
+// custome hook start////////////////////////////////////////////////////////////////////////
 const useProduct = () => {
   return useContext(AppContext);
 };
-// custome hook end////////////////////////////////
+// custome hook end//////////////////////////////////////////////////////////////////////
 
 export { AppProvider, AppContext, useProduct };

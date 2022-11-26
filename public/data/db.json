@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "name": "myshirt1",
+      "name": "white",
       "company": "apple",
       "price": 500,
       "color": ["red", "green"],
@@ -35,7 +35,7 @@
     },
     {
       "id": 2,
-      "name": "myshirt2",
+      "name": "jackets",
       "company": "apple",
       "price": 500,
       "color": ["red", "green"],
@@ -62,7 +62,7 @@
     },
     {
       "id": 3,
-      "name": "myshirt1",
+      "name": "men jecket",
       "company": "apple",
       "price": 500,
       "color": ["red", "green"],

@@ -1,31 +1,45 @@
-
-const Filter_reducer = (state,action) => {
-
-
-    switch (action.type) {
-        case "LOAD_FILTER_PRODUCTS":
-    return{
+const Filter_reducer = (state, action) => {
+  switch (action.type) {
+    case "LOAD_FILTER_PRODUCTS":
+      
+      return {
         ...state,
-    filter_products:[...action.payload],
-    all_products:[...action.payload ] ,
-    };
+        filter_products: [...action.payload],
+        all_products: [...action.payload],
+      };
 
     case "GET_SORT_VALUE":
-        let userSortValue = document.getElementById("sort");
-        let sort_value = userSortValue.options[userSortValue.selectedIndex].value;
-        
-        // console.log(sort_value);
-        return{
-            ...state,
-            // sorting_value:sort_value,
-        }
-    
-        default:
-            return state;
-    }
-    
+      return {
+        ...state,
+        sorting_value: action.payload,
+      };
+    case "UPDATE_FILTER_VALUE":
+      const { name, value } = action.payload;
 
- 
-}
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          [name]: value,
+        },
+      };
 
-export default Filter_reducer
+    case "FILTER_PRODUCTS":
+      let { all_products } = state;
+      let tempFiltersProducts = [...all_products];
+      const { text } = state.filters;
+      if (text) {
+        tempFiltersProducts.filter((curElem) => {
+          return curElem.name.toLowerCase().includes(text)
+        });
+      }
+      return {
+        ...state,
+        filter_products: tempFiltersProducts,
+      };
+    default:
+      return state;
+  }
+};
+
+export default Filter_reducer;

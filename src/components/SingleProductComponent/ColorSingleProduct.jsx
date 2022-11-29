@@ -1,7 +1,7 @@
-import React,{useState} from "react";
+// import React,{useState} from "react";
 import { motion } from "framer-motion"
 const ColorSingleProduct = ({products}) => {
- const {colors=[],id} = products;
+ const {colors=[]} = products;
   
 
   return (

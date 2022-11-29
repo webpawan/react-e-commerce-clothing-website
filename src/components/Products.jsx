@@ -4,7 +4,7 @@ import ProductList from "./ProductsComponents/ProductList";
 import { useFileContext } from "../components/Context/FilterContext";
 import SortingCom from "./Filters/SortingCom";
 const Shop = () => {
-  const {filter_products,sorting} = useFileContext();
+  const {filter_products,sorting,} = useFileContext();
 
   return (
     <>
@@ -22,7 +22,7 @@ const Shop = () => {
           <SortingCom SortingFun={sorting}/>
           <FilterSection />
          <ProductList filter_products={filter_products}/>
-         {console.log(filter_products)}
+      
         </div>
         <nav aria-label="Page navigation example">
           <ul className="pagination justify-content-center">

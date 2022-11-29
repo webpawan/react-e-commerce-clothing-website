@@ -3,21 +3,16 @@
     {
       "id": 1,
       "name": "ashirt1",
-      "company": "apple",
-      "price": 500,
-      "color": ["red", "green"],
+      "company": "adidas",
+      "price": 100,
+      "colors": ["white", "green"],
       "img": "/img/img1.webp",
       "desc": "o bhai",
-      "category": "pants",
+      "category": "shirts",
+      
       "featured": true,
       "reviews":60,
       "stars":3.5,
-      "colors":[
-"btn-danger",
-"btn-warning",
-"btn-primary",
-"btn-dark"
-      ],
       "imgs": [
         {
           "img": "/img/img1.webp"
@@ -36,9 +31,9 @@
     {
       "id": 2,
       "name": "xshirt2",
-      "company": "apple",
-      "price": 100,
-      "color": ["red", "green"],
+      "company": "puma",
+      "price": 200,
+      "colors": ["red", "green"],
       "img": "/img/bg1.jpg",
       "desc": "o bhai",
       "category": "pants",
@@ -63,12 +58,12 @@
     {
       "id": 3,
       "name": "b",
-      "company": "apple",
-      "price": 1000,
-      "color": ["red", "green"],
+      "company": "nicky",
+      "price": 500,
+      "colors": ["red", "green"],
       "img": "/img/img4.jpg",
       "desc": "o bhai",
-      "category": "pants",
+      "category": "jens",
       "featured": true,
       "reviews":60,
       "stars":3.5,
@@ -90,12 +85,12 @@
     {
       "id": 4,
       "name": "myshirt1",
-      "company": "apple",
-      "price": 500,
-      "color": ["red", "green"],
+      "company": "M&M",
+      "price": 1000,
+      "colors": ["red", "green"],
       "img": "/img/sam1.jpg",
       "desc": "o bhai",
-      "category": "pants",
+      "category": "jackets",
       "featured": true,
       "reviews":60,
       "stars":3.5,

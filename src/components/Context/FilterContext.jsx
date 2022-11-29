@@ -3,7 +3,6 @@ import { useContext, createContext } from "react";
 import reducer from "../reducer/Filter_reducer";
 import { useProduct } from "./ProductContext";
 
-
 const FilterContext = createContext();
 const intialState = {
   filter_products: [],

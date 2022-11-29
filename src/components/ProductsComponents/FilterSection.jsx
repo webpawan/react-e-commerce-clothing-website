@@ -1,28 +1,65 @@
-import React from 'react'
-
+import React from "react";
+import { useFileContext } from "../Context/FilterContext";
+import { motion } from "framer-motion"
 const FilterSection = () => {
+  const {
+    filters: { text ,price,maxPrice,minPrice},
+    all_products,
+    updateFilterValue,clearFilters
+  } = useFileContext();
+
+// TO GET UNIQUE DATA FOR ALL FIELDS 
+
+const getUniqueData = (data,property) =>{
+  let newVal = data.map((curElem)=>{
+    return curElem[property]
+  })
+// ---------------------------------------------------
+//   if(property==="colors"){
+//     return (newVal = ["All",...new Set([].concat(...newVal))])
+//   }else{
+//     return (newVal = ["All",...new Set (newVal)]);
+//   }
+
+// // return (newVal = ["All",...new Set (newVal)]);----------------------
+// -------------------------------------------------------------------------------
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
+if(property==="colors"){
+  newVal = newVal.flat();
+}
+
+return (newVal = ["All",...new Set (newVal)]);
+// ------------------------------------
+
+}
+
+  // unique data for category 
+
+  const categoryData = getUniqueData(all_products,"category");
+  const companyData = getUniqueData(all_products,"company");
+  const colorsData = getUniqueData(all_products,"colors");
+
   return (
     <>
-    <div className="col-11 col-md-4 text-light mx-auto">
-            <form action="">
-              <div className="input-group mb-3 ">
-                <div className="input-group-prepend">
-                  <button
+      <div className="col-11 col-md-4  mx-auto">
+        <form action="" onSubmit={(e) => e.preventDefault()}>
+          <div className="input-group mb-3 ">
+            <div className="input-group-prepend">
+              {/* <button
                     className="input-group-text btn btn-outline-dark"
                     id="basic-addon1"
                   >
                     <i className="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </div>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Username"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                />
-              </div>
-            </form>
+                  </button> */}
+            </div>
+            <input
+              type="text"
+              value={text}
+              onChange={updateFilterValue}
+              className="form-control"
+              placeholder="Search Items"
+              name="text"
+            />
           </div>
         </form>
         <hr />

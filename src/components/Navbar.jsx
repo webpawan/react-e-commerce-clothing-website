@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg shadow  navbar-light bg-light fixed-top">
+      <nav className="navbar navbar-expand-lg shadow  navbar-light bg-light fixed-top ">
         <div className="container-fluid">
           <NavLink to="/" className="navbar-brand">
             <img src="img/logo.jpg" className="logo" alt="logo" /> Fashion

@@ -19,7 +19,7 @@ const Home = () => {
       <MostSelling />
       <ManAccessori />
       <Factors />
-      {/* <Footer /> */}
+      <Footer />
       
     </>
   );

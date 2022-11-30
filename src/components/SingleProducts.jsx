@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useProduct } from "./Context/ProductContext";
 import MyImags from "./SingleProductComponent/MyImags";
 import Stars from "./SingleProductComponent/Stars";
@@ -7,6 +7,8 @@ import ColorSingleProduct from "./SingleProductComponent/ColorSingleProduct";
 import CartAmountToggle from "./SingleProductComponent/CartAmountToggle";
 import Navigation from "./utility/Navigation";
 import Heading from "./utility/Heading";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 const API = "http://localhost:3000/data";
 const SingleProducts = () => {
   const { getSingleProducts, isSingleLoading, singleProducts } = useProduct();
@@ -43,6 +45,7 @@ const SingleProducts = () => {
 
   return (
     <>
+    <Navbar/>
       <div className="container-fluid py-3">
         <div className="row">
           <div className="my-5"><Navigation name={name} page="home" /></div>
@@ -61,14 +64,16 @@ const SingleProducts = () => {
               setDecrease={setDecrease}
               setIncrease={setIncrease}
             />
-
-            <button className="btn btn-outline-dark text-capitalize">
-              add to cart
+<NavLink to={"/cart"}>
+<button className="btn btn-outline-dark text-capitalize">
+              Add to Cart
             </button>
+</NavLink>
+            
           </div>
         </div>
       </div>
-      
+      <Footer/>
     </>
   );
 };

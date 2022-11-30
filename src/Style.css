@@ -44,6 +44,10 @@ body {
   font-size: .9rem;
 }
 
+.w-90{
+  width: 90%;
+  margin: auto;
+}
 
 .aactive {
   color: red;
@@ -221,3 +225,7 @@ align-items: center;
   width: 80vw;
   margin: 0 auto;
 }
+
+
+/* /////////////////ADD TO CART ///////////////////////////// */
+

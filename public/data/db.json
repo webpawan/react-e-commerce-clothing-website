@@ -2,6 +2,7 @@
   "data": [
     {
       "id": 1,
+      "stock":5,
       "name": "ashirt1",
       "company": "adidas",
       "price": 100,
@@ -30,6 +31,7 @@
     },
     {
       "id": 2,
+      "stock":5,
       "name": "xshirt2",
       "company": "puma",
       "price": 200,
@@ -57,6 +59,7 @@
     },
     {
       "id": 3,
+      "stock":5,
       "name": "b",
       "company": "nicky",
       "price": 500,
@@ -84,6 +87,7 @@
     },
     {
       "id": 4,
+      "stock":5,
       "name": "myshirt1",
       "company": "M&M",
       "price": 1000,

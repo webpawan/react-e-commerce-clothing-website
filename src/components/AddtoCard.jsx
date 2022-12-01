@@ -1,8 +1,36 @@
 import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import img from "../img/sam1.jpg";
+import { useCartContext } from "./Context/CartContext";
+import Cartitem from "./AddtoCartComponent/Cartitem";
+import { NavLink } from "react-router-dom";
+import Heading from "./utility/Heading";
+
+
 const AddtoCard = () => {
+  const {cart,clearCart} = useCartContext();
+  console.log(cart);
+
+if(cart.length  === 0){
+  
+  return <>
+  <div className="container py-5">
+        <Navbar />
+        </div>
+  <div className="py-5  mx-auto text-center">
+  <Heading name="No item in the cart"/>
+  
+  </div>
+  <div className="d-flex justify-content-center">
+  <NavLink to="/products">
+            <button className="btn btn-outline-primary text-capitalize mx-2 mb-2 ">contine shopping</button>
+            </NavLink>
+  </div>
+
+  <Footer/>
+  </>
+}
+
   return (
     <>
       <div className="container py-5">
@@ -10,72 +38,37 @@ const AddtoCard = () => {
       </div>
       <div className="container ">
         <div className="row mx-auto py-3 bg-light">
-          <div className="col-12 d-md-flex justify-content-between align-items-center mx-auto">
-          <div className="col-2 text-center mx-auto">
-            <h5 className="heading-1 text-capitalize">item</h5>
+          <div className="col-12 d-flex justify-content-between align-items-center mx-auto ">
+          <div className="col-sm-2 col-4 text-center mx-auto">
+            <h5 className="heading-1 text-capitalize size">item</h5>
           </div>
-          <div className="col-2 text-center mx-auto">
-          <h5 className="heading-1 text-capitalize">price</h5>
+          <div className="col-2 text-center mx-auto cart_hide">
+          <h5 className="heading-1 text-capitalize size ">price</h5>
           </div>
-            <div className="col-2 text-center mx-auto">
-            <h5 className="heading-1 text-capitalize">quantity</h5>
+            <div className="col-sm-2 col-4 text-center mx-auto">
+            <h5 className="heading-1 text-capitalize size">quantity</h5>
             </div>
-            <div className="col-2 text-center mx-auto">
-            <h5 className="heading-1 text-capitalize">subTotal</h5>
+            <div className="col-2 text-center mx-auto cart_hide">
+            <h5 className="heading-1 text-capitalize size">subTotal</h5>
             </div>
-            <div className="col-2 text-center mx-auto">
-            <h5 className="heading-1 text-capitalize">remove</h5>
+            <div className="col-sm-2 col-4 text-center mx-auto">
+            <h5 className="heading-1 text-capitalize size">remove</h5>
             </div>
           </div>
           <hr />
         <div>
-        <div className="my-3 col-12 d-md-flex justify-content-between align-items-center mx-auto ">
-          <div className="col-2 d-col-flex align-items-center mx-auto text-center">
-              <div className="img_container--cart mx-auto ">
-                <img src={img} style={{width:'100px'}} className="img-container" alt="" />
-              </div>
-              <div className="mx-2  ">
-                <h5>name</h5>
-                <h6>color <button className="btn btn-dark p-1"></button></h6>
-              </div>
-            </div>
-            <div className="col-2 mx-auto text-center">
-              <div>
-                <h5>
-                  500
-                </h5>
-              </div>
-            </div>
-            <div className="col-2 mx-auto text-center">
-            <div className="counter d-flex justify-content-center my-4">
-        <button className="btn " >
-        <i className="fa-solid  fa-plus"></i>
-        </button>
-        <h4 className="my-1 mx-3">1</h4>
-        <button className="btn ">
-        <i className="fa-solid fa-minus"></i>
-        </button>
-      </div>
-            </div>
-            <div className="col-2 mx-auto text-center">
-              <div>
-                <h5>500</h5>
-              </div>
-            </div>
-            <div className="col-2 mx-auto text-center">
-              <button className="btn btn-outline-danger">
-              <i className="fa-solid fa-trash"></i>
-              </button>
-            </div>
-            
-          </div>
+        {cart.map((curElem)=>{
+return <Cartitem key={curElem.id} {...curElem}/>
+        })}
           <hr className="w-90 mx-atuo my-2"/>
         </div>
           
         
           <div className="col-12 d-sm-flex justify-content-between align-items-center mt-5 mx-auto text-center ">
-            <button className="btn btn-outline-primary text-capitalize mx-2 my-2">contine shopping</button>
-            <button className="btn btn-outline-danger text-capitalize mx-2">clear cart</button>
+            <NavLink to="/products">
+            <button className="btn btn-outline-primary text-capitalize mx-2 my-2 ">contine shopping</button>
+            </NavLink>
+            <button className="btn btn-outline-danger text-capitalize mx-2" onClick={clearCart}>clear cart</button>
           </div>
           
           

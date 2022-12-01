@@ -7,7 +7,7 @@ const HeaderLast = () => {
   const { isLoading, featureProducts } = useProduct();
 
   if (isLoading) {
-    return <div> ...Loading</div>;
+    return <div> ...Loading  lorem1000</div>;
   }
 
   return (

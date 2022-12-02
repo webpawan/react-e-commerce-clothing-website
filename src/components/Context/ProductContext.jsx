@@ -1,26 +1,55 @@
 import axios from "axios";
-import { useEffect, useReducer, useContext, createContext } from "react";
+import {
+  useEffect,
+  useReducer,
+  useContext,
+  createContext,
+  useState,
+} from "react";
 import reducer from "../reducer/productreduces";
 
 const AppContext = createContext();
 
-const api = "http://localhost:3000/data";
 const initialState = {
   isLoading: false,
   isError: false,
   products: [],
   featureProducts: [],
+  mostSelling:[],
+  accessory:[],
   isSingleLoading: false,
   singleProducts: {},
 };
+
+
 // ----------------------------------------------------main function
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+ const [page, setPage] = useState(1);
+  // pagination -------------
 
-  const getProducts = async (url) => {
+  const previousPage = () => {
+    if(page <= 1){
+      return;
+    }
+
+    setPage(page - 1);
+  };
+
+  const nextPage = () => {
+   if(page === 3){
+    return setPage(1);
+   }
+
+   setPage( page + 1)
+  };
+
+  // ---------------
+  const getProducts = async (page) => {
     dispatch({ type: "set_loading" });
     try {
-      const res = await axios.get(url);
+      const api = `http://localhost:3000/data?_page=${page}&_limit=7`;
+      const res = await axios.get(api);
       const products = await res.data;
       dispatch({ type: "Set_api_data", payload: products });
     } catch (error) {
@@ -42,11 +71,19 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    getProducts(api);
-  }, []);
+    getProducts(page);
+  }, [page]);
 
   return (
-    <AppContext.Provider value={{ ...state, getSingleProducts }}>
+    <AppContext.Provider
+      value={{
+        ...state,
+        getSingleProducts,
+        previousPage,
+        nextPage,
+        page,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

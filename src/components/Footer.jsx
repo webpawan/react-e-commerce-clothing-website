@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../img/logo.jpg";
 import icons from '../img/icons.png'
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -18,9 +19,9 @@ const Footer = () => {
               <span className="">
                 <i className="fa-brands footerIcons fa-twitter"></i>
               </span>
-              <span className="">
+              <a href="https://www.linkedin.com/in/pawan-saini-35575518b/">
               <i className="fa-brands footerIcons fa-linkedin"></i>
-              </span>
+              </a>
               <span className="">
               <i className="fa-brands footerIcons fa-square-instagram"></i>
               </span>
@@ -29,17 +30,27 @@ const Footer = () => {
           </div>
           <div className="col-10 col-md-4 col-lg-3 text-right my-2 mx-auto">
             <h4 className="my-2">Information</h4>
-            <p className="my-2">About Us</p>
+           <NavLink to='/about' className="nav-link">
+           <p className="my-2">About Us</p>
+           </NavLink>
             <p className="my-2"> Checkout</p>
-            <p className="my-2">Contact</p>
+            <NavLink to='/about' className="nav-link">
+           <p className="my-2">Contact us</p>
+           </NavLink>
             <p className="my-2">Serivius</p>
           </div>
           <div className="col-10 col-md-4 col-lg-3 text-right my-2 mx-auto">
             <h4 className="my-2">My Account</h4>
             <p className="my-2">My Account </p>
-            <p className="my-2"> Contact</p>
-            <p className="my-2">Shopping Cart</p>
-            <p className="my-2">Shop</p>
+            <NavLink to='/about' className="nav-link">
+           <p className="my-2"> Contact</p>
+           </NavLink>
+           <NavLink to='/cart' className="nav-link">
+           <p className="my-2">Shopping Cart</p>
+           </NavLink>
+           <NavLink to='/products' className="nav-link">
+           <p className="my-2">Product</p>
+           </NavLink>
           </div>
           <div className="col-10 col-md-4 col-lg-3 text-right my-2 mx-auto">
             <h4 className="my-2">Join Our Newsletter Now</h4>

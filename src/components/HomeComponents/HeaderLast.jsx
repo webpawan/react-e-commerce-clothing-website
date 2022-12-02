@@ -13,11 +13,12 @@ const HeaderLast = () => {
   return (
     <>
       <div className="container-fluid HeaderLast mb-5">
+      
         <div className="row  text-center">
          {featureProducts.map((curElem,index)=>{
           const {id,name,price,img} = curElem;
         
-return  <div className=" my-4 mx-auto col-12 col-sm-6 col-lg-3" key={index} >
+return  <div className=" my-4 mx-auto col-12 col-sm-4" key={index} >
 <div className="img_container__header text-center" 
    >
 <button className="navLink__header text-center btn btn-dark ">

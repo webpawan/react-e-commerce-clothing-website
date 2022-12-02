@@ -1,7 +1,11 @@
-import React from "react";
+import { motion } from "framer-motion";
+import React  from "react";
 import { NavLink } from "react-router-dom";
 
 const ProductList = ({ filter_products }) => {
+  
+  
+ 
   return (
     <>
       <div className="col-11 col-md-8 mx-auto">
@@ -10,7 +14,10 @@ const ProductList = ({ filter_products }) => {
             const { id, name, desc, img, price } = Productsdata;
             return (
               <div className="col-11 col-md-6 col-lg-4 mb-3 mx-auto " key={id}>
-                <div className="card">
+                <motion.div className="card"
+                whileHover={{y:-10}}
+                initial={{opacity:0,y:-50}}
+                animate={{opacity:1,y:0,transition:{delay:.4,duration:1}} }>
                   <img
                     src={img}
                     className="card-img-top mx-auto"
@@ -30,7 +37,7 @@ const ProductList = ({ filter_products }) => {
                       go to product
                     </NavLink>
                   </div>
-                </div>
+                </motion.div>
               </div>
             );
           })}

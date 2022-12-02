@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React,{useState} from 'react'
 
 const MyImags = ({imgs=[{img:""}]}) => {
@@ -18,9 +19,11 @@ return(
           
                 {imgs.map((curElm,index)=>{
                   return(
-                    <div className="col-3 mx-auto " key={index}>   
-                    <img src={curElm.img} alt="j" className="img-fluid" onClick={()=> setMainimg(curElm)}/>
-                  </div>
+                    <motion.div whileTap={{y:-15}}   whileHover={{y:-5}}
+                    initial={{opacity:0,y:-30}}
+                    animate={{opacity:1,y:0,transition:{delay:.4,duration:1}} }className="col-2  mx-auto" key={index} >   
+                    <img src={curElm.img} alt="j" className="img-fluid mx-2 shadow-lg" onClick={()=> setMainimg(curElm)}/>
+                  </motion.div>
                   )
                 })}
               

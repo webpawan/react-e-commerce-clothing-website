@@ -41,7 +41,7 @@ const FilterSection = () => {
 
   return (
     <>
-      <div className="col-11 col-md-4  mx-auto">
+      <div  className="col-11 col-md-4  mx-auto">
         <form action="" onSubmit={(e) => e.preventDefault()}>
           <div className="input-group mb-3 ">
             <div className="input-group-prepend">

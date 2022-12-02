@@ -5,9 +5,16 @@ import { useFileContext } from "../components/Context/FilterContext";
 import SortingCom from "./Filters/SortingCom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import { useProduct } from "./Context/ProductContext";
+import Heading from "./utility/Heading";
+
+
 const Shop = () => {
   const {filter_products,sorting,} = useFileContext();
+const {previousPage,nextPage,page} = useProduct();
 
+
+  
   return (
     <>
       <div className="container my-5">
@@ -15,8 +22,10 @@ const Shop = () => {
       </div>
       <div className="container-fluid  ">
         <div className="row ">
-          <div className="col-11  mx-auto text-center mt-5">
-            <h1 className="mx-auto px-3 heading underline d-inline">shope</h1>
+          <div  className="col-11  mx-auto text-center mt-5">
+        
+      <Heading name="shope"/>
+
           </div>
         </div>
 
@@ -29,27 +38,17 @@ const Shop = () => {
         <nav aria-label="Page navigation example">
           <ul className="pagination justify-content-center">
             <li className="page-item disabled">
-              <button className="btn btn-outline-dark mx-2">
+              <button className="btn btn-outline-dark mx-2" onClick={previousPage}>
                 <i className="fa-solid fa-angle-left "></i>
               </button>
             </li>
             <li className="page-item">
               <a className="page-link" href="/">
-                1
+                {page }
               </a>
             </li>
             <li className="page-item">
-              <a className="page-link" href="/">
-                2
-              </a>
-            </li>
-            <li className="page-item">
-              <a className="page-link" href="/">
-                3
-              </a>
-            </li>
-            <li className="page-item">
-              <button className="btn btn-outline-dark mx-2">
+              <button className="btn btn-outline-dark mx-2" onClick={nextPage}>
                 <i className="fa-solid fa-angle-right "></i>
               </button>
             </li>

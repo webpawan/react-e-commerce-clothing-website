@@ -3,7 +3,7 @@ import React from 'react'
 const Sorting = ({SortingFun}) => {
   return (
     <>
-    <div className="col-11 mx-auto mb-2">
+    <div className="col-11 mx-auto mb-3">
             <div className=" d-flex justify-content-end align-items-center">
              <form action="#">
               <label htmlFor="sort">sort</label>

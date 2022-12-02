@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "stock":5,
+      "stock": 5,
       "name": "ashirt1",
       "company": "adidas",
       "price": 100,
@@ -10,10 +10,10 @@
       "img": "/img/img1.webp",
       "desc": "o bhai",
       "category": "shirts",
-      
+
       "featured": true,
-      "reviews":60,
-      "stars":3.5,
+      "reviews": 60,
+      "stars": 3.5,
       "imgs": [
         {
           "img": "/img/img1.webp"
@@ -31,7 +31,7 @@
     },
     {
       "id": 2,
-      "stock":5,
+      "stock": 5,
       "name": "xshirt2",
       "company": "puma",
       "price": 200,
@@ -40,8 +40,8 @@
       "desc": "o bhai",
       "category": "pants",
       "featured": true,
-      "reviews":60,
-      "stars":3.5,
+      "reviews": 60,
+      "stars": 3.5,
       "imgs": [
         {
           "img": "/img/bg1.jpg"
@@ -59,17 +59,17 @@
     },
     {
       "id": 3,
-      "stock":5,
+      "stock": 5,
       "name": "b",
       "company": "nicky",
       "price": 500,
       "colors": ["red", "green"],
-      "img": "/img/img4.jpg",
+      "img": "/img/sam1.jpg",
       "desc": "o bhai",
       "category": "jens",
       "featured": true,
-      "reviews":60,
-      "stars":3.5,
+      "reviews": 60,
+      "stars": 3.5,
       "imgs": [
         {
           "img": "/img/img1.webp"
@@ -87,7 +87,125 @@
     },
     {
       "id": 4,
-      "stock":5,
+      "stock": 5,
+      "MostSelling":true,
+      "name": "myshirt1",
+      "company": "M&M",
+      "price": 1000,
+      "colors": ["red", "green"],
+      "img": "/img/sam1.jpg",
+      "desc": "o bhai",
+      "category": "jackets",
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/sam1.jpg"
+        },
+        {
+          "img": "/img/sam2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "stock": 5,
+      "MostSelling":true,
+      "name": "ashirt1",
+      "company": "adidas",
+      "price": 100,
+      "colors": ["white", "green"],
+      "img": "/img/img1.webp",
+      "desc": "o bhai",
+      "category": "shirts",
+
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img1.webp"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "stock": 5,
+      "MostSelling":true,
+      "name": "xshirt2",
+      "company": "puma",
+      "price": 200,
+      "colors": ["red", "green"],
+      "img": "/img/bg1.jpg",
+      "desc": "o bhai",
+      "category": "pants",
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        }
+      ]
+    },
+    
+    {
+      "id": 7,
+      "stock": 5,
+      "name": "b",
+      "company": "nicky",
+      "Accessory":true,
+      "price": 500,
+      "colors": ["red", "green"],
+      "img": "/img/img4.jpg",
+      "desc": "o bhai",
+      "category": "jens",
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img3.webp"
+        },
+        {
+          "img": "/img/img4.webp"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "stock": 5,
       "name": "myshirt1",
       "company": "M&M",
       "price": 1000,
@@ -96,8 +214,290 @@
       "desc": "o bhai",
       "category": "jackets",
       "featured": true,
-      "reviews":60,
-      "stars":3.5,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/sam1.jpg"
+        },
+        {
+          "img": "/img/sam2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "stock": 5,
+      "name": "ashirt1",
+      "company": "adidas",
+      "price": 100,
+      "colors": ["white", "green"],
+      "img": "/img/img1.webp",
+      "desc": "o bhai",
+      "category": "shirts",
+
+      "featured": true,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img1.webp"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "stock": 5,
+      "name": "xshirt2",
+      "company": "puma",
+      "price": 200,
+      "colors": ["red", "green"],
+      "img": "/img/bg1.jpg",
+      "desc": "o bhai",
+      "category": "pants",
+      "featured": true,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "stock": 5,
+      "name": "b",
+      "company": "nicky",
+      "price": 500,
+      "colors": ["red", "green"],
+      "img": "/img/img4.jpg",
+      "desc": "o bhai",
+      "category": "jens",
+      "featured": true,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img3.webp"
+        },
+        {
+          "img": "/img/img4.webp"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "stock": 5,
+      "name": "myshirt1",
+      "company": "M&M",
+      "price": 1000,
+      "colors": ["red", "green"],
+      "img": "/img/sam1.jpg",
+      "desc": "o bhai",
+      "category": "jackets",
+      "featured": true,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/sam1.jpg"
+        },
+        {
+          "img": "/img/sam2.jpg"
+        }
+      ]
+    },
+    
+    {
+      "id": 13,
+      "stock": 5,
+      "name": "ashirt1",
+      "company": "adidas",
+      "price": 100,
+      "colors": ["white", "green"],
+      "img": "/img/img1.webp",
+      "desc": "o bhai",
+      "category": "shirts",
+
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img1.webp"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "stock": 5,
+      "name": "xshirt2",
+      "company": "puma",
+      "price": 200,
+      "colors": ["red", "green"],
+      "img": "/img/bg1.jpg",
+      "desc": "o bhai",
+      "category": "pants",
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        },
+        {
+          "img": "/img/bg1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "stock": 5,
+      "name": "b",
+      "company": "nicky",
+      "price": 500,
+      "colors": ["red", "green"],
+      "img": "/img/img4.jpg",
+      "desc": "o bhai",
+      "category": "jens",
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img3.webp"
+        },
+        {
+          "img": "/img/img4.webp"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "stock": 5,
+      "name": "myshirt1",
+      "company": "M&M",
+      "price": 1000,
+      "colors": ["red", "green"],
+      "img": "/img/sam1.jpg",
+      "desc": "o bhai",
+      "category": "jackets",
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/sam1.jpg"
+        },
+        {
+          "img": "/img/sam2.jpg"
+        }
+      ]
+    }, {
+      "id": 17,
+      "stock": 5,
+      "name": "b",
+      "company": "nicky",
+      "price": 500,
+      "colors": ["red", "green"],
+      "img": "/img/img4.jpg",
+      "desc": "o bhai",
+      "category": "jens",
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/img1.webp"
+        },
+        {
+          "img": "/img/img2.webp"
+        },
+        {
+          "img": "/img/img3.webp"
+        },
+        {
+          "img": "/img/img4.webp"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "stock": 5,
+      "name": "myshirt1",
+      "company": "M&M",
+      "price": 1000,
+      "colors": ["red", "green"],
+      "img": "/img/sam1.jpg",
+      "desc": "o bhai",
+      "category": "jackets",
+      "featured": false,
+      "reviews": 60,
+      "stars": 3.5,
       "imgs": [
         {
           "img": "/img/img1.webp"

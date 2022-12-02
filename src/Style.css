@@ -146,6 +146,7 @@ height: 60vh;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 
 .SingleProduct__imgContainer img{
@@ -199,10 +200,6 @@ align-items: center;
 
 /* dealof the weak ------------------------- */
 
-.DealOftheWeak {
-  width: 95vw;
-  height: 60vh;
-}
 
 .perallexImg {
   background: linear-gradient(
@@ -313,4 +310,24 @@ align-items: center;}
   font-size: 15px;
   height: 5px;
  /* color: white; */
+}
+
+/* loading   */
+
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  position: relative;
+}
+
+.img{
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
 }

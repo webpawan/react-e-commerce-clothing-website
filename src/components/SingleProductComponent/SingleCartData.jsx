@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useCartContext } from "../Context/CartContext";
 import CartAmountToggle from "../SingleProductComponent/CartAmountToggle";
+
 const SingleCartData = ({ product }) => {
   const { id, colors, stock } = product;
   const [color, setColor] = useState(colors[0]);
@@ -22,7 +24,8 @@ const SingleCartData = ({ product }) => {
       <p className="colors  d-flex justify-content-center ">
         {colors.map((bgColor, index) => {
           return (
-            <button
+            <motion.button
+            whileTap={{y:-8}}   whileHover={{y:-3}}
               key={index}
               style={{ backgroundColor: bgColor }}
               className={
@@ -35,7 +38,7 @@ const SingleCartData = ({ product }) => {
                   <i className="fa-solid fa-check "></i>{" "}
                 </span>
               ) : null}
-            </button>
+            </motion.button>
           );
         })}
       </p>

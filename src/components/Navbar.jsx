@@ -63,7 +63,7 @@ const Navbar = () => {
     initial={{opacity:0}}
     animate={{ y: 100 ,opacity:1}}
     
-  transition={{ delay: 2.5,duration:1 , type: "spring", stiffness: 100}}
+  transition={{ delay: 3,duration:1 , type: "spring", stiffness: 100}}
  
   >
 <lord-icon

@@ -1,13 +1,5 @@
 const productreduces = (CurState, action) => {
-  // if(action.type === "set_loading"){
-  //   return{
-  //     ...CurState,
-  //     isLoading:true,
-  //   };
-  // } else if{
-
-  // } this is not good way for chacking statement in this case so i will use switch case
-
+ 
   switch (action.type) {
     case "set_loading":
       return {
@@ -17,14 +9,22 @@ const productreduces = (CurState, action) => {
 
     case "Set_api_data":
       const featureData = action.payload.filter((CurEle) => {
-        return CurEle.feature !== true;
+        return CurEle.featured === true;
       });
-
+      const mostSellingData = action.payload.filter((CurEle) => {
+        return CurEle.MostSelling === true;
+      });
+      const accessoryData = action.payload.filter((CurEle) => {
+        return CurEle.Accessory === true;
+      });
+      
       return {
         ...CurState,
         isLoading: false,
         products: action.payload,
         featureProducts: featureData,
+        mostSelling:mostSellingData,
+        accessory:accessoryData
       };
 
     case "SET_SINGLE_LOADING":

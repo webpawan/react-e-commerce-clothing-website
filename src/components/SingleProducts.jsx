@@ -3,12 +3,12 @@ import { useParams } from "react-router-dom";
 import { useProduct } from "./Context/ProductContext";
 import MyImags from "./SingleProductComponent/MyImags";
 import Stars from "./SingleProductComponent/Stars";
-
 import Navigation from "./utility/Navigation";
 import Heading from "./utility/Heading";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import SingleCartData from "./SingleProductComponent/SingleCartData";
+import loader from "./images/loderBig.gif" 
 const API = "http://localhost:3000/data";
 const SingleProducts = () => {
   const { getSingleProducts, isSingleLoading, singleProducts } = useProduct();
@@ -29,10 +29,9 @@ const SingleProducts = () => {
 
   if (isSingleLoading) {
     return (
-      <h1 className="loading">
-        ...loading Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Earum eligendi eaque veniam eum et iste, quisquam quis voluptates harum
-      </h1>
+      <div className="loading">
+       <img src={loader} alt="" />
+      </div>
     );
   }
 

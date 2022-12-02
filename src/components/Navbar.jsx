@@ -1,6 +1,10 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useCartContext } from "./Context/CartContext";
+
 const Navbar = () => {
+  const {total_item} = useCartContext();
   return (
     <>
       <nav className="navbar navbar-expand-lg shadow  navbar-light bg-light fixed-top ">
@@ -45,6 +49,35 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+
+<motion.div className="cart_icon shadow"
+   
+    drag
+    dragConstraints={{
+      top: -30,
+      left: -50,
+      right: 0,
+      bottom: 50,
+      
+    }}
+    initial={{opacity:0}}
+    animate={{ y: 100 ,opacity:1}}
+    
+  transition={{ delay: 2.5,duration:1 , type: "spring", stiffness: 100}}
+ 
+  >
+<lord-icon
+
+    src="https://cdn.lordicon.com/dnoiydox.json"
+    trigger="hover"
+    colors="primary:#121331,secondary:#242424"
+    style={{width:'30px'}}
+    >
+      
+</lord-icon>
+<p>{total_item}</p>
+</motion.div>
+
     </>
   );
 };

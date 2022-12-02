@@ -190,7 +190,7 @@ align-items: center;
 
 .btn_active{
   opacity: 1;
-  background-color: red;
+ 
 }
 
 
@@ -292,4 +292,25 @@ align-items: center;
     /* font-size: 8px !important; */
   }
 
+}
+
+
+/* ///////////// cart incon///////////// */
+
+.cart_icon{
+  position: fixed;
+top: 5%;
+right: 2%;
+z-index: 10000;
+background-color: white;
+padding: 6px;
+border-radius: 100px;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.my_cart{
+  font-size: 15px;
+  height: 5px;
+ /* color: white; */
 }

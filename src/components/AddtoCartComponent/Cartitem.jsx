@@ -3,17 +3,8 @@ import { useCartContext } from '../Context/CartContext';
 import CartAmountToggle from '../SingleProductComponent/CartAmountToggle';
 
 const Cartitem = ({id,name,img,color,price,amount}) => {
-    const {removeitem} = useCartContext();
-    const setDecrease = () => {
-        // if (amount > 1) {
-        //   setAmount(amount - 1);
-        // } else {
-        //   setAmount(1);
-        // }
-      };
-      const setIncrease = () => {
-        // amount < stock ? setAmount(amount + 1) : setAmount(stock);
-      };
+    const {removeitem,setIncrement,setDecrement} = useCartContext();
+    
   return (
     <>
     <div className="my-3 col-12 d-flex justify-content-between align-items-center mx-auto ">
@@ -37,8 +28,8 @@ const Cartitem = ({id,name,img,color,price,amount}) => {
         
        <CartAmountToggle
         amount={amount}
-        setDecrease={setDecrease}
-        setIncrease={setIncrease}
+        setDecrease={()=>setDecrement(id)}
+        setIncrease={()=>setIncrement(id)}
         my_padding="my_padding"
       />
             </div>

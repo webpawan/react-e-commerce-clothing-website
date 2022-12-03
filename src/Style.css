@@ -1,10 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
-.hide_overflow{
+.hide_overflow {
   overflow-x: hidden;
 }
 
@@ -13,7 +12,7 @@ body {
   font-family: "Philosopher", sans-serif;
 }
 
-.style_heading{
+.style_heading {
   font-family: "Tangerine", cursive;
 }
 
@@ -31,9 +30,6 @@ body {
   letter-spacing: 0.1rem;
 }
 
-
-
-
 .special {
   font-family: "Tangerine", cursive;
   font-size: 3rem;
@@ -49,11 +45,11 @@ body {
   border-bottom: 0.2rem solid rgba(205, 1, 1, 0.827);
 }
 
-.pera{
-  font-size: .9rem;
+.pera {
+  font-size: 0.9rem;
 }
 
-.w-90{
+.w-90 {
   width: 90%;
   margin: auto;
 }
@@ -63,7 +59,6 @@ body {
   background-color: red;
 }
 /* global style end ---------------------------------------- */
-
 
 .logo {
   width: 3rem;
@@ -93,9 +88,9 @@ body {
   width: 100%;
 }
 
-.img_container__header:hover img{
- filter: brightness(60%);
-  transition: all .5s;
+.img_container__header:hover img {
+  filter: brightness(60%);
+  transition: all 0.5s;
   z-index: -10;
 }
 
@@ -142,73 +137,60 @@ body {
   font-size: 1rem;
 }
 
-
-
-
-
 /* header part end ------------------------- */
 
 /* single product start////////////////////////////// */
 
-.SingleProduct__imgContainer{
-height: 60vh;
-display: flex;
-justify-content: center;
-align-items: center;
-
+.SingleProduct__imgContainer {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.SingleProduct__imgContainer img{
+.SingleProduct__imgContainer img {
   height: 100%;
   background-size: cover;
-
 }
 
-
-
-
-.checkColor{
+.checkColor {
   color: white;
   margin: 0;
   padding: 0;
-  font-size: .1rem;
+  font-size: 0.1rem;
 }
 
-.singleProduct__count{
+.singleProduct__count {
   display: flex;
   background-color: red;
 }
 
-.counter{
+.counter {
   display: flex;
 }
 
-.btn_style{
+.btn_style {
   height: 20px;
   width: 20px;
   border-radius: 100%;
   padding: 0;
-  opacity: .5;
+  opacity: 0.5;
   margin: 0 5px;
   border: 1px solid rgba(29, 26, 26, 0.605);
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
-.btn_style:hover{
+.btn_style:hover {
   opacity: 1;
 }
 
-.btn_active{
+.btn_active {
   opacity: 1;
- 
 }
-
 
 /* single product end////////////////////////////// */
 
-
 /* dealof the weak ------------------------- */
-
 
 .perallexImg {
   background: linear-gradient(
@@ -253,77 +235,66 @@ align-items: center;
   margin: 0 auto;
 }
 
-
 /* /////////////////ADD TO CART ///////////////////////////// */
-
-
-
-
-
 
 /* /////////////////MEDIA QUERY /////////////////////////////// */
 
 @media only screen and (max-width: 576px) {
-
- 
-  .my_padding{
+  .my_padding {
     padding: 5px !important;
     border: none !important;
     /* font-size: 8px !important; */
   }
 
-  .cart_hide{
+  .cart_hide {
     display: none;
   }
 
-  .size{
+  .size {
     font-size: 25px;
   }
 
-  .img-container--cart{
+  .img-container--cart {
     width: 50px !important;
   }
-
-
 }
 
-@media only screen and (max-width: 765px){
-  .size{
+@media only screen and (max-width: 765px) {
+  .size {
     font-size: 30px;
   }
-  .my_padding{
-    padding:1px 6px !important;
+  .my_padding {
+    padding: 1px 6px !important;
     background-color: black;
     color: white;
     /* font-size: 8px !important; */
   }
-
 }
-
 
 /* ///////////// cart incon///////////// */
 
-.cart_icon{
+.cart_icon {
   position: fixed;
-top: 5%;
-right: 2%;
-z-index: 10000;
-background-color: white;
-padding: 6px;
-border-radius: 100px;
-display: flex;
-justify-content: center;
-align-items: center;}
+  top: 5%;
+  right: 2%;
+  z-index: 10000;
+  background-color: white;
+  padding: 6px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.my_cart{
+.my_cart {
   font-size: 15px;
   height: 5px;
- /* color: white; */
+  /* color: white; */
 }
 
 /* loading   */
 
-.loading{
+.loading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,29 +304,26 @@ align-items: center;}
   position: fixed;
 }
 
-.img{
-position: absolute;
-height: 100%;
-width: 100%;
-top: 0;
-left: 0;
+.img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-.mytext{
+.mytext {
   position: relative;
 }
 
-.text{
+.text {
   position: absolute;
- color: black;
+  color: black;
   top: 50%;
   left: 50%;
   background-color: rgba(240, 248, 255, 0.477);
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   font-weight: 500;
-
 }
 
 /*my animation */
-
-

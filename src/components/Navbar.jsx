@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useCartContext } from "./Context/CartContext";
 
 const Navbar = () => {
-  const {total_item} = useCartContext();
+  const { total_item } = useCartContext();
   return (
     <>
       <nav className="navbar navbar-expand-lg shadow  navbar-light bg-light fixed-top ">
@@ -45,33 +45,29 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <h5 className="d-flex  "><i className="fa-regular fa-circle-user"></i></h5>
+            <h5 className="d-flex  ">
+              <i className="fa-regular fa-circle-user"></i>
+            </h5>
           </div>
         </div>
       </nav>
 
-<NavLink to="/cart">
-<motion.div className="cart_icon shadow"
-  
-   initial={{opacity:0}}
-   animate={{ y: 100 ,opacity:1}}
-   
- transition={{ delay: 3,duration:1 , type: "spring", stiffness: 100}}
-
- >
-<lord-icon
-
-   src="https://cdn.lordicon.com/dnoiydox.json"
-   trigger="hover"
-   colors="primary:#121331,secondary:#242424"
-   style={{width:'30px'}}
-   >
-     
-</lord-icon>
-<p>{total_item}</p>
-</motion.div>
-
-</NavLink>
+      <NavLink to="/cart">
+        <motion.div
+          className="cart_icon shadow"
+          initial={{ opacity: 0 }}
+          animate={{ y: 100, opacity: 1 }}
+          transition={{ delay: 3, duration: 1, type: "spring", stiffness: 100 }}
+        >
+          <lord-icon
+            src="https://cdn.lordicon.com/dnoiydox.json"
+            trigger="hover"
+            colors="primary:#121331,secondary:#242424"
+            style={{ width: "30px" }}
+          ></lord-icon>
+          <p>{total_item}</p>
+        </motion.div>
+      </NavLink>
     </>
   );
 };

@@ -39,9 +39,11 @@ return  <div className="col-lg-3 col-md-4 col-10 mx-auto my-2 " key={index}>
            })}
           </div>
         </div>
-        <button className="btn btn-outline-primary mt-5 text-capitalize">
-          click
+        <NavLink to='/products'>
+        <button className="btn btn-outline-dark mt-5 text-capitalize">
+          more products
         </button>
+        </NavLink>
       </div>
     </>
   );

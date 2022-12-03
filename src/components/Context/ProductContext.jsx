@@ -37,7 +37,7 @@ const AppProvider = ({ children }) => {
   };
 
   const nextPage = () => {
-   if(page === 3){
+   if(page === 2){
     return setPage(1);
    }
 
@@ -51,6 +51,7 @@ const AppProvider = ({ children }) => {
       const api = `http://localhost:3000/data?_page=${page}&_limit=7`;
       const res = await axios.get(api);
       const products = await res.data;
+      
       dispatch({ type: "Set_api_data", payload: products });
     } catch (error) {
       dispatch({ type: "api_error" });

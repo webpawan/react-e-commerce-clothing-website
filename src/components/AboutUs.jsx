@@ -1,28 +1,25 @@
 
-import per1 from "../img/team1.jpg";
-import per2 from "../img/team2.jpg";
-import per3 from "../img/team3.jpg";
-import per4 from "../img/team4.jpg";
-import { useProduct } from "./Context/ProductContext";
+import team1 from "../img/team1.jpg";
+import team2 from "../img/team5.jpg";
+import team3 from "../img/team3.jpg";
+import team4 from "../img/team4.jpg";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-
+import Heading from '../components/utility/Heading'
 
 const AboutUs = () => {
 
-const name = useProduct()
-console.log(name);
+
   return (
     <>
       <div className="container py-5">
         <Navbar />
       </div>
+      
       <div className="container mx-auto my-3">
         <div className="row mx-atuo text-center">
           <div className="col-11 mx-auto">
-            <h1 className="text-capitalize heading underline d-inline px-2">
-              about us
-            </h1>
+           <Heading name="About Us"/>
           </div>
         </div>
         <div className="row mx-auto">
@@ -87,29 +84,27 @@ console.log(name);
         <div className="row mx-auto my-2">
           <div className="row mx-auto">
             <div className="col-11 mx-auto text-center">
-              <h3 className="heading-1 underline-1 d-inline px-2">
-                Meet Our Team
-              </h3>
+            <Heading name="Meet Our Team"/>
             </div>
             <div className="row mx-auto mt-5">
               <div className="col-10 col-md-4 col-lg-3 mx-auto">
-                <img src={per4} alt="" className="img-fluid" />
+                <img src={team3} alt="" className="img-fluid" />
                 <h4 className="text-capitalize">Vanessa Soto</h4>
                 <p className=" text-uppercase"> founder and c.e.o.</p>
               </div>
               <div className="col-10 col-md-4 col-lg-3 mx-auto">
-                <img src={per1} alt="" className="img-fluid" />
-                <h4 className="text-capitalize">andreea-avramescu</h4>
+                <img src={team2} alt="" className="img-fluid" />
+                <h4 className="text-capitalize">John Smith</h4>
                 <p className=" text-uppercase">Fashion Design </p>
               </div>
               <div className="col-10 col-md-4 col-lg-3 mx-auto">
-                <img src={per2} alt="" className="img-fluid" />
+                <img src={team1} alt="" className="img-fluid" />
                 <h4 className="text-capitalize">Christine Wise</h4>
                 <p className=" text-uppercase">Manager</p>
               </div>
               <div className="col-10 col-md-4 col-lg-3 mx-auto">
-                <img src={per3} alt="" className="img-fluid" />
-                <h4 className="text-capitalize">John Smith</h4>
+                <img src={team4} alt="" className="img-fluid" />
+                <h4 className="text-capitalize">Mark</h4>
                 <p className=" text-uppercase">cto</p>
               </div>
             </div>

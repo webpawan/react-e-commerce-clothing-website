@@ -3,85 +3,85 @@
     {
       "id": 1,
       "stock": 5,
-      "name": "ashirt1",
+      "name": "Zip-Front Bomber Jacket  ",
       "company": "adidas",
-      "price": 100,
-      "colors": ["white", "green"],
-      "img": "/img/img1.webp",
-      "desc": "o bhai",
-      "category": "shirts",
+      "price": 1819,
+      "colors": ["rgb(101,54,34)", "black"],
+      "img": "/img/1.webp",
+      "desc": "Winterwear Wear this stylish Suede jacket from the house of Campus Sutra. The Suede jacket is comfortable to wear as the fabrics are light on the skin. Using stellar quality solvents, SLEEVE TYPE: Full long sleeve. Designed to offer an energetic look, the bomber jacket combines the warmth of comfortable and casual feel. Offering an elevated look, it showcases a perfect fit. Suede Febric : Long Sleeve : Winter Wear : Solid Jacket : Smoth Jacket : Casual Wear : Western Wear Regular Fit Package contains : 1 jacket ",
+      "category": "jackets",
 
       "featured": true,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/img1.webp"
+          "img": "/img/1.1.jpg"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/1.1.webp"
         },
         {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/img1.webp"
+          "img": "/img/1.2.jpg"
+        }, {
+          "img": "/img/1.4.webp"
         }
+
       ]
     },
     {
       "id": 2,
       "stock": 5,
-      "name": "xshirt2",
+      "name": "Mid-Wash Slim Fit Jeans",
       "company": "puma",
-      "price": 200,
-      "colors": ["red", "green"],
-      "img": "/img/bg1.jpg",
-      "desc": "o bhai",
-      "category": "pants",
+      "price": 1363,
+      "colors": ["black", "blue"],
+      "img": "/img/2.webp",
+      "desc": "Zip fly with button closure 5-pocket stylingBelt loops Package contains: 1 jeans Machinwash Mid Rise 98% cotton, 2% elastane",
+      "category": "Jeans",
       "featured": true,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/bg1.jpg"
+          "img": "/img/2.1.jpg"
         },
         {
-          "img": "/img/bg1.jpg"
+          "img": "/img/2.2.jpg"
         },
         {
-          "img": "/img/bg1.jpg"
+          "img": "/img/2.3.webp"
         },
         {
-          "img": "/img/bg1.jpg"
+          "img": "/img/2.4.webp"
         }
       ]
     },
     {
       "id": 3,
       "stock": 5,
-      "name": "b",
-      "company": "nicky",
-      "price": 500,
-      "colors": ["red", "green"],
-      "img": "/img/sam1.jpg",
-      "desc": "o bhai",
-      "category": "jens",
+      "name": "Colourblock Tracksuit with Insert Pockets",
+      "company": "local brand",
+      "price": 1274,
+      "colors": ["blue", "green","black"],
+      "img": "/img/3.0.webp",
+      "desc": "Due to light effects, the actual colour may be slight different from Product color This jacket makes you comfortable in daily routine activities and work outs. It is suitable as sportswear, sleepwear, jogging wear or relax wear and for gymming, running, and Work out. Regular Fit This track suit makes you comfortable in daily routine activities and work outs. It is suitable as sportswear, sleepwear, jogging wear or relax wear and for gymming, running, and work out. Package contains: 1 jacket, 1 trackpants Lycra Machine wash cold",
+      "category": "Tracksuit",
       "featured": true,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/img1.webp"
+          "img": "/img/3.1.webp"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/3.2.webp"
         },
         {
-          "img": "/img/img3.webp"
+          "img": "/img/3.3.jpg"
         },
         {
-          "img": "/img/img4.webp"
+          "img": "/img/3.4.jpg"
         }
       ]
     },
@@ -89,28 +89,28 @@
       "id": 4,
       "stock": 5,
       "MostSelling":true,
-      "name": "myshirt1",
-      "company": "M&M",
-      "price": 1000,
-      "colors": ["red", "green"],
-      "img": "/img/sam1.jpg",
-      "desc": "o bhai",
-      "category": "jackets",
+      "name": "Striped Slim Fit Shirt with Patch Pocket",
+      "company": "local brand",
+      "price": 544,
+      "colors": ["white", "blue","black"],
+      "img": "/img/4.0.webp",
+      "desc": "Single-button square cuffsCurved hemlineSlim Fit Machine wash 100% Cotton",
+      "category": "shirts",
       "featured": false,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/img1.webp"
+          "img": "/img/4.1.webp"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/4.2.webp"
         },
         {
-          "img": "/img/sam1.jpg"
+          "img": "/img/4.3.webp"
         },
         {
-          "img": "/img/sam2.jpg"
+          "img": "/img/4.4.webp"
         }
       ]
     },
@@ -118,12 +118,12 @@
       "id": 5,
       "stock": 5,
       "MostSelling":true,
-      "name": "ashirt1",
+      "name": "Checked Slim Fit Shirt ",
       "company": "adidas",
-      "price": 100,
-      "colors": ["white", "green"],
-      "img": "/img/img1.webp",
-      "desc": "o bhai",
+      "price": 542,
+      "colors": ["white", "blue"],
+      "img": "/img/5.0.webp",
+      "desc": "Single-button curved cuffsCurved hem Slim Fit Machine wash 100% Cotton",
       "category": "shirts",
 
       "featured": false,
@@ -131,16 +131,16 @@
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/img1.webp"
+          "img": "/img/5.1.webp"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/5.2.webp"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/5.3.webp"
         },
         {
-          "img": "/img/img1.webp"
+          "img": "/img/5.4.webp"
         }
       ]
     },
@@ -148,28 +148,25 @@
       "id": 6,
       "stock": 5,
       "MostSelling":true,
-      "name": "xshirt2",
-      "company": "puma",
-      "price": 200,
-      "colors": ["red", "green"],
-      "img": "/img/bg1.jpg",
-      "desc": "o bhai",
-      "category": "pants",
+      "name": "Slim Fit Crew-Neck T-Shirt",
+      "company": "local brand",
+      "price": 500,
+      "colors": ["black", "white"],
+      "img": "/img/6.1.webp",
+      "desc": "Slim Fit Package contains: 1 t-shirt Polyester Machine wash",
+      "category": "t-shirt",
       "featured": false,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/bg1.jpg"
+          "img": "/img/6.1.webp"
         },
         {
-          "img": "/img/bg1.jpg"
+          "img": "/img/6.2.webpg"
         },
         {
-          "img": "/img/bg1.jpg"
-        },
-        {
-          "img": "/img/bg1.jpg"
+          "img": "/img/6.3.webp"
         }
       ]
     },
@@ -177,341 +174,108 @@
     {
       "id": 7,
       "stock": 5,
-      "name": "b",
+      "name": "man accessories",
       "company": "nicky",
       "Accessory":true,
       "price": 500,
-      "colors": ["red", "green"],
-      "img": "/img/img4.jpg",
-      "desc": "o bhai",
-      "category": "jens",
+      "colors": ["black"],
+      "img": "/img/combo.jpg",
+      "desc": "man accessories",
+      "category": "accessories",
       "featured": false,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/img1.webp"
+          "img": "/img/7.1.webp"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/7.2.webp"
         },
         {
-          "img": "/img/img3.webp"
+          "img": "/img/7.3.jpg"
         },
         {
-          "img": "/img/img4.webp"
+          "img": "/img/7.4.webp"
         }
       ]
     },
     {
       "id": 8,
       "stock": 5,
-      "name": "myshirt1",
-      "company": "M&M",
-      "price": 1000,
-      "colors": ["red", "green"],
-      "img": "/img/sam1.jpg",
-      "desc": "o bhai",
-      "category": "jackets",
+      "name": "Embroidered Round-Neck Straight Kurta",
+      "company": "MAUKA",
+      "price": 800,
+      "colors": ["orange", "red","white"],
+      "img": "/img/8.0.webp",
+      "desc": "1 kurta Dry clean 100% cotton No Darts",
+      "category": "woman Kurta",
       "featured": true,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/img1.webp"
+          "img": "/img/8.1.webp"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/8.2.webp"
         },
         {
-          "img": "/img/sam1.jpg"
-        },
-        {
-          "img": "/img/sam2.jpg"
+          "img": "/img/8.3.jpg"
         }
+        
       ]
     },
     {
       "id": 9,
       "stock": 5,
-      "name": "ashirt1",
+      "name": "Typographic Print Crew-Neck T-shirt",
       "company": "adidas",
-      "price": 100,
-      "colors": ["white", "green"],
-      "img": "/img/img1.webp",
-      "desc": "o bhai",
-      "category": "shirts",
-
+      "price": 760,
+      "colors": ["white", "black"],
+      "img": "/img/9.0.webp",
+      "desc": "Package contains: 1 t-shirt Machine wash Cotton Relaxed Fit",
+      "category": "woman t-shirt",
       "featured": true,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/img1.webp"
+          "img": "/img/9.1.webp"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/9.2.webp"
         },
         {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/img1.webp"
+          "img": "/img/9.3.webp"
         }
       ]
     },
     {
       "id": 10,
       "stock": 5,
-      "name": "xshirt2",
-      "company": "puma",
-      "price": 200,
-      "colors": ["red", "green"],
-      "img": "/img/bg1.jpg",
-      "desc": "o bhai",
-      "category": "pants",
-      "featured": true,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/bg1.jpg"
-        },
-        {
-          "img": "/img/bg1.jpg"
-        },
-        {
-          "img": "/img/bg1.jpg"
-        },
-        {
-          "img": "/img/bg1.jpg"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "stock": 5,
-      "name": "b",
-      "company": "nicky",
-      "price": 500,
-      "colors": ["red", "green"],
-      "img": "/img/img4.jpg",
-      "desc": "o bhai",
-      "category": "jens",
-      "featured": true,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/img1.webp"
-        },
-        {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/img3.webp"
-        },
-        {
-          "img": "/img/img4.webp"
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "stock": 5,
-      "name": "myshirt1",
-      "company": "M&M",
-      "price": 1000,
-      "colors": ["red", "green"],
-      "img": "/img/sam1.jpg",
-      "desc": "o bhai",
-      "category": "jackets",
-      "featured": true,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/img1.webp"
-        },
-        {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/sam1.jpg"
-        },
-        {
-          "img": "/img/sam2.jpg"
-        }
-      ]
-    },
-    
-    {
-      "id": 13,
-      "stock": 5,
-      "name": "ashirt1",
-      "company": "adidas",
+      "name": "BB Polka-Dot Print Stole with Tassels",
+      "company": "local brand",
       "price": 100,
-      "colors": ["white", "green"],
-      "img": "/img/img1.webp",
+      "colors": ["red", "pink"],
+      "img": "/img/10.0.webp",
       "desc": "o bhai",
-      "category": "shirts",
-
-      "featured": false,
+      "category": "Stole",
+      "featured": true,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/img1.webp"
+          "img": "/img/10.1.jpg"
         },
         {
-          "img": "/img/img2.webp"
+          "img": "/img/10.2.jpg"
         },
         {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/img1.webp"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "stock": 5,
-      "name": "xshirt2",
-      "company": "puma",
-      "price": 200,
-      "colors": ["red", "green"],
-      "img": "/img/bg1.jpg",
-      "desc": "o bhai",
-      "category": "pants",
-      "featured": false,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/bg1.jpg"
-        },
-        {
-          "img": "/img/bg1.jpg"
-        },
-        {
-          "img": "/img/bg1.jpg"
-        },
-        {
-          "img": "/img/bg1.jpg"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "stock": 5,
-      "name": "b",
-      "company": "nicky",
-      "price": 500,
-      "colors": ["red", "green"],
-      "img": "/img/img4.jpg",
-      "desc": "o bhai",
-      "category": "jens",
-      "featured": false,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/img1.webp"
-        },
-        {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/img3.webp"
-        },
-        {
-          "img": "/img/img4.webp"
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "stock": 5,
-      "name": "myshirt1",
-      "company": "M&M",
-      "price": 1000,
-      "colors": ["red", "green"],
-      "img": "/img/sam1.jpg",
-      "desc": "o bhai",
-      "category": "jackets",
-      "featured": false,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/img1.webp"
-        },
-        {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/sam1.jpg"
-        },
-        {
-          "img": "/img/sam2.jpg"
-        }
-      ]
-    }, {
-      "id": 17,
-      "stock": 5,
-      "name": "b",
-      "company": "nicky",
-      "price": 500,
-      "colors": ["red", "green"],
-      "img": "/img/img4.jpg",
-      "desc": "o bhai",
-      "category": "jens",
-      "featured": false,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/img1.webp"
-        },
-        {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/img3.webp"
-        },
-        {
-          "img": "/img/img4.webp"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "stock": 5,
-      "name": "myshirt1",
-      "company": "M&M",
-      "price": 1000,
-      "colors": ["red", "green"],
-      "img": "/img/sam1.jpg",
-      "desc": "o bhai",
-      "category": "jackets",
-      "featured": false,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/img1.webp"
-        },
-        {
-          "img": "/img/img2.webp"
-        },
-        {
-          "img": "/img/sam1.jpg"
-        },
-        {
-          "img": "/img/sam2.jpg"
+          "img": "/img/10.3.jpg"
         }
       ]
     }
+   
   ]
 }

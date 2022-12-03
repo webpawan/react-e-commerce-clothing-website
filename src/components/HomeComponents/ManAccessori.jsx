@@ -14,11 +14,10 @@ const ManAccessori = () => {
       <div className="container-fluid  DealOftheWeak perallexImg mx-auto text-center p-4 mb-4">
         <div className="row">
           {accessory.map((curElem,index)=>{
-const {name,price,img} = curElem;
+const {name,id} = curElem;
 return <div className="col" key={index}>
 <h2 className="text-light d-inline py-2 radius-5 heading underline text-capitalize">
-
-  man accessori combo pack
+{name}
 </h2>
 
 <h6 className="text-white my-5 w-50  mx-auto">
@@ -36,7 +35,9 @@ return <div className="col" key={index}>
   </span>
 </h6>
 
+<NavLink to={`singleproduct/${id}`}>
 <button className="btn btn-outline-warning text-capitalize">buy now</button>
+</NavLink>
 </div>
           })}
         </div>

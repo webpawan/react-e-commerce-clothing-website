@@ -38,11 +38,11 @@ const Contact = () => {
             </div>
             <div className="mb-4">
               <h4 className="text-capitalize "> sagar</h4>
-              <h6>195 E Parker Square Dr, Parker, CO 801 +43 982-314-0958.</h6>
+              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptas?</h6>
             </div>
             <div className="mb-4">
               <h4 className="text-capitalize "> bhopal</h4>
-              <h6>109 Avenue Léon, 63 Clermont-Ferrand +12 345-423-9893.</h6>
+              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
             </div>
           </div>
           <div className="col-10 col-md-6 mx-auto ">

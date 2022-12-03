@@ -26,7 +26,7 @@ return  <div className=" my-4 mx-auto col-12 col-sm-4" key={index} >
 </button>
   <img src={img} alt="img" />
  <div className="details_header__products  w-50 ">
- <p className="text-center">{name}</p>
+ <p className="text-center">{name.slice(0,25)}</p>
   <p>{price}</p>
  </div>
 </div>

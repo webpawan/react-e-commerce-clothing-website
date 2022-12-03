@@ -27,7 +27,7 @@ const ProductList = ({ filter_products }) => {
                   <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text d-flex justify-content-between">
-                      <span> {desc}</span>
+                      <span> {desc.slice(0,40)}</span>
                       <span> {price}</span>
                     </p>
                     <NavLink

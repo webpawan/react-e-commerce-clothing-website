@@ -50,34 +50,28 @@ const Navbar = () => {
         </div>
       </nav>
 
+<NavLink to="/cart">
 <motion.div className="cart_icon shadow"
+  
+   initial={{opacity:0}}
+   animate={{ y: 100 ,opacity:1}}
    
-    drag
-    dragConstraints={{
-      top: -30,
-      left: -50,
-      right: 0,
-      bottom: 50,
-      
-    }}
-    initial={{opacity:0}}
-    animate={{ y: 100 ,opacity:1}}
-    
-  transition={{ delay: 3,duration:1 , type: "spring", stiffness: 100}}
- 
-  >
+ transition={{ delay: 3,duration:1 , type: "spring", stiffness: 100}}
+
+ >
 <lord-icon
 
-    src="https://cdn.lordicon.com/dnoiydox.json"
-    trigger="hover"
-    colors="primary:#121331,secondary:#242424"
-    style={{width:'30px'}}
-    >
-      
+   src="https://cdn.lordicon.com/dnoiydox.json"
+   trigger="hover"
+   colors="primary:#121331,secondary:#242424"
+   style={{width:'30px'}}
+   >
+     
 </lord-icon>
 <p>{total_item}</p>
 </motion.div>
 
+</NavLink>
     </>
   );
 };

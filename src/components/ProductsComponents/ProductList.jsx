@@ -20,7 +20,7 @@ const ProductList = ({ filter_products }) => {
                 animate={{opacity:1,y:0,transition:{delay:.4,duration:1}} }>
                   <img
                     src={img}
-                    className="card-img-top mx-auto"
+                    className="card-img-top mx-auto my-2"
                     alt="hello"
                     style={{ width: "10rem" }}
                   />
@@ -28,7 +28,7 @@ const ProductList = ({ filter_products }) => {
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text d-flex justify-content-between">
                       <span> {desc.slice(0,40)}</span>
-                      <span> {price}</span>
+                      <span>&#x20B9; {price}</span>
                     </p>
                     <NavLink
                       to={`/singleproduct/${id}`}

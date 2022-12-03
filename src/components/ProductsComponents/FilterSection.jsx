@@ -149,7 +149,7 @@ const FilterSection = () => {
           ></input>
         </div>
         <hr />
-        <div className="clear_filters">
+        <div className="clear_filters my-2">
           <button className="btn btn-outline-danger" onClick={clearFilters}>
             clear filters
           </button>

@@ -51,7 +51,7 @@ const SingleProducts = () => {
 
             <Stars ProductStars={stars} />
 
-            <h4 className="mb-4">${price}</h4>
+            <h4 className="mb-4">&#x20B9;{price}</h4>
 
             {stock > 0 && <SingleCartData product={singleProducts} />}
           </div>

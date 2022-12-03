@@ -1,6 +1,7 @@
 import React from "react";
 import { useProduct } from "../Context/ProductContext";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ManAccessori = () => {
   const { isLoading, accessory } = useProduct();
@@ -11,6 +12,18 @@ const ManAccessori = () => {
 
   return (
     <>
+{/* 
+drag
+   dragConstraints={{
+     top: -30,
+     left: -50,
+     right: 0,
+     bottom: 50,
+     
+   }} */}
+
+
+
       <div className="container-fluid  DealOftheWeak perallexImg mx-auto text-center p-4 mb-4">
         <div className="row">
           {accessory.map((curElem,index)=>{
@@ -21,12 +34,18 @@ return <div className="col" key={index}>
 </h2>
 
 <h6 className="text-white my-5 w-50  mx-auto">
-  <span
+  <motion.span drag  dragConstraints={{
+     top: -30,
+     left: -50,
+     right: 0,
+     bottom: 50,
+     
+   }}
     className="d-block special text-capitalize mb-3"
     style={{ fontSize: "3.5rem" }}
   >
     why ? accessory need{" "}
-  </span>
+  </motion.span>
   <span className="my-4">
     Image result for why man accessory need Accessories do magic in
     making, the otherwise dull and simple, outfit more stylish and
@@ -36,7 +55,7 @@ return <div className="col" key={index}>
 </h6>
 
 <NavLink to={`singleproduct/${id}`}>
-<button className="btn btn-outline-warning text-capitalize">buy now</button>
+<motion.button whileHover={{y:-10,transition:{duration:.5}}} whileTap={{opacity:0,scale:.4}} className="btn btn-outline-warning text-capitalize">buy now</motion.button>
 </NavLink>
 </div>
           })}

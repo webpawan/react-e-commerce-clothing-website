@@ -20,7 +20,7 @@ const Cartitem = ({id,name,img,color,price,amount}) => {
             <div className="col-2 mx-auto text-center cart_hide">
               <div>
                 <h5>
-                  {price}
+                &#x20B9;{price}
                 </h5>
               </div>
             </div>
@@ -35,7 +35,7 @@ const Cartitem = ({id,name,img,color,price,amount}) => {
             </div>
             <div className="col-2 mx-auto text-center cart_hide">
               <div>
-                <h5>{amount*price}</h5>
+                <h5>&#x20B9;{amount*price}</h5>
               </div>
             </div>
             <div className="col-sm-2 col-4 mx-auto text-center">

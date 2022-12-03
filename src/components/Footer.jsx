@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../img/logo.jpg";
 import icons from '../img/icons.png'
 import { NavLink } from "react-router-dom";
+
+
 const Footer = () => {
   return (
     <>

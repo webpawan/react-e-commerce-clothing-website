@@ -30,33 +30,32 @@
       ]
     },
     {
-      "id": 2,
+      "id": 8,
       "stock": 5,
-      "name": "Mid-Wash Slim Fit Jeans",
-      "company": "puma",
-      "price": 1363,
-      "colors": ["black", "blue"],
-      "img": "/img/2.webp",
-      "desc": "Zip fly with button closure 5-pocket stylingBelt loops Package contains: 1 jeans Machinwash Mid Rise 98% cotton, 2% elastane",
-      "category": "Jeans",
+      "name": "Embroidered Round-Neck Straight Kurta",
+      "company": "MAUKA",
+      "price": 800,
+      "colors": ["orange", "red","white"],
+      "img": "/img/8.0.webp",
+      "desc": "1 kurta Dry clean 100% cotton No Darts",
+      "category": "woman Kurta",
       "featured": true,
       "reviews": 60,
       "stars": 3.5,
       "imgs": [
         {
-          "img": "/img/2.1.jpg"
+          "img": "/img/8.1.webp"
         },
         {
-          "img": "/img/2.2.jpg"
+          "img": "/img/8.2.webp"
         },
         {
-          "img": "/img/2.3.webp"
-        },
-        {
-          "img": "/img/2.4.webp"
+          "img": "/img/8.3.jpg"
         }
+        
       ]
     },
+   
     {
       "id": 3,
       "stock": 5,
@@ -200,32 +199,7 @@
         }
       ]
     },
-    {
-      "id": 8,
-      "stock": 5,
-      "name": "Embroidered Round-Neck Straight Kurta",
-      "company": "MAUKA",
-      "price": 800,
-      "colors": ["orange", "red","white"],
-      "img": "/img/8.0.webp",
-      "desc": "1 kurta Dry clean 100% cotton No Darts",
-      "category": "woman Kurta",
-      "featured": true,
-      "reviews": 60,
-      "stars": 3.5,
-      "imgs": [
-        {
-          "img": "/img/8.1.webp"
-        },
-        {
-          "img": "/img/8.2.webp"
-        },
-        {
-          "img": "/img/8.3.jpg"
-        }
-        
-      ]
-    },
+   
     {
       "id": 9,
       "stock": 5,
@@ -273,6 +247,33 @@
         },
         {
           "img": "/img/10.3.jpg"
+        }
+      ]
+    }, {
+      "id": 2,
+      "stock": 5,
+      "name": "Mid-Wash Slim Fit Jeans",
+      "company": "puma",
+      "price": 1363,
+      "colors": ["black", "blue"],
+      "img": "/img/2.webp",
+      "desc": "Zip fly with button closure 5-pocket stylingBelt loops Package contains: 1 jeans Machinwash Mid Rise 98% cotton, 2% elastane",
+      "category": "Jeans",
+      "featured": true,
+      "reviews": 60,
+      "stars": 3.5,
+      "imgs": [
+        {
+          "img": "/img/2.1.jpg"
+        },
+        {
+          "img": "/img/2.2.jpg"
+        },
+        {
+          "img": "/img/2.3.webp"
+        },
+        {
+          "img": "/img/2.4.webp"
         }
       ]
     }

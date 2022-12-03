@@ -19,8 +19,8 @@ const Factors = () => {
         <h4>DELIVERY ON TIME
 </h4>
         <h5>If good have prolems</h5>
-    </div> <div className="col-10 col-md-3 mx-auto text-center">
-        <span><i className="fa-solid fa-shield myIcon"></i></span>
+    </div> <div className="col-10 col-md-3 mx-auto text-center ">
+        <span><i className="fa-solid fa-shield myIcon my-2"></i></span>
         <h4>SECURE PAYMENT</h4>
         <h5>100% secure payment</h5>
     </div>

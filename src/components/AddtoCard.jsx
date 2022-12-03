@@ -21,7 +21,7 @@ const AddtoCard = () => {
         </div>
         <div className="d-flex justify-content-center">
           <NavLink to="/products">
-            <button className="btn btn-outline-primary text-capitalize mx-2 mb-2 ">
+            <button className="btn btn-outline-dark text-capitalize mx-2 mb-2 ">
               contine shopping
             </button>
           </NavLink>
@@ -66,7 +66,7 @@ const AddtoCard = () => {
 
           <div className="col-12 d-sm-flex justify-content-between align-items-center mt-5 mx-auto text-center ">
             <NavLink to="/products">
-              <button className="btn btn-outline-primary text-capitalize mx-2 my-2 ">
+              <button className="btn btn-outline-dark text-capitalize mx-2 my-2 ">
                 contine shopping
               </button>
             </NavLink>
@@ -84,7 +84,7 @@ const AddtoCard = () => {
               <hr />
               <div className="d-flex justify-content-between align-items-center">
                 <h6 className="lead text-capitalize me-5">total order </h6>{" "}
-                <h6 className="lead"> {total_price}</h6>{" "}
+                <h6 className="lead">&#x20B9; {total_price}</h6>{" "}
               </div>
             </div>
           </div>

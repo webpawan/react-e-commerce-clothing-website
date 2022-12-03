@@ -6,6 +6,7 @@ import team4 from "../img/team4.jpg";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Heading from '../components/utility/Heading'
+import React from "react";
 
 const AboutUs = () => {
 

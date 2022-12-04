@@ -22,10 +22,10 @@ const SingleProducts = () => {
     stars,
     stock,
   } = singleProducts;
-
+/* eslint-disable */
   useEffect(() => {
     getSingleProducts(`${API}/${id}`);
-  }, []);
+  }, [API]);
 
   if (isSingleLoading) {
     return (

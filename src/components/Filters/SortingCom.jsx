@@ -8,8 +8,8 @@ const Sorting = ({SortingFun}) => {
              <form action="#">
               <label htmlFor="sort">sort</label>
               <select name="sort" id="sort" className="mx-2 p-1" onClick={SortingFun}>
-                <option value="lowest">price lowest</option>
-                <option value="highest">price highest</option>
+                <option value="lowest">price highest</option>
+                <option value="highest">price lowest</option>
                 <option value="a-z"> a-z</option>
                 <option value="z-a"> z-a</option>
                 

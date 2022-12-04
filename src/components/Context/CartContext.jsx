@@ -5,11 +5,15 @@ const CartContext = createContext();
 
 const getLocalCartData = () =>{
   let newCartData = localStorage.getItem("cartData");
-  if(newCartData ===[]){
-    return[];;
-  }else{
-    return JSON.parse(newCartData)
-  }
+  // if(newCartData ===[]){
+  //   return[];
+  // }else{
+  //   return JSON.parse(newCartData)
+  // }
+
+  const parseData = JSON.parse(localStorage.getItem(newCartData));
+  if(!Array.isArray(parseData)) return [];
+  return parseData
 }
 
 const intialState = {
@@ -51,8 +55,9 @@ const setDecrement =(id) =>{
 // to add data in local storage 
 
 useEffect(() => {
-  dispatch({type:"CART_TOTAL_ITEM"})
-  dispatch({type:"CART_TOTAL_PRICE"})
+  // dispatch({type:"CART_TOTAL_ITEM"})
+  // dispatch({type:"CART_TOTAL_PRICE"})
+  dispatch({type:"CART_ITEM_PRICE_TOTAL"})
  localStorage.setItem("cartData",JSON.stringify(state.cart))
 }, [state.cart]);
 

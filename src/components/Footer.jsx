@@ -1,6 +1,6 @@
 import React from "react";
 // import logo from "../img/logo.jpg";
-import icons from '../img/icons.png'
+// import icons from '../img/icons.png'
 import { NavLink } from "react-router-dom";
 
 
@@ -69,7 +69,7 @@ const Footer = () => {
           <hr/>
     <div className="col d-flex justify-content-between align-items-center flex-wrap">
     <p className="d-inline ">Copyright ©2022 All rights reserved Nahi ha By <span className="text-capitalize">( pawan saini ) </span>( 😂 i am unemployed,currently i am looking for job)</p>
-          <img src={icons} alt="logo" className="img-fluid " />
+          {/* <img src={icons} alt="logo" className="img-fluid " /> */}
     </div>
         </div>
       </div>

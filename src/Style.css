@@ -192,18 +192,18 @@ body {
 
 /* dealof the weak ------------------------- */
 
-/* .perallexImg {
+.perallexImg {
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.384) 60%
     ),
-    url(./img/combo.jpg);
+    url('./components/img/combo.jpg');
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
   background-repeat: no-repeat;
-} */
+}
 
 /* factor-------------- */
 
@@ -220,7 +220,7 @@ body {
 /* ////////////////////about us //////////////////// */
 
 .storeImg {
-  background: url(./img/bg10.jpg);
+  background: url('./components/img/bg10.jpg');
   height: 80vh;
   background-size: cover;
   background-position: center;

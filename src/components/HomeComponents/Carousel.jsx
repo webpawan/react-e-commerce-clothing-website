@@ -13,10 +13,11 @@ const Carousel = () => {
         >
           <div className="carousel-inner">
             <div className="carousel-item active mytext">
+              
               <img
-                src="img/bg1.jpg"
-                className="d-block w-100 text-center imgCarousel"
-                alt="im1"
+                src="img/c-3.jpg"
+                className="d-block w-100 imgCarousel "
+                alt="im2"
               />
               <motion.h1
                 initial={{ opacity: 0 }}
@@ -41,19 +42,26 @@ const Carousel = () => {
               </motion.p>
             </div>
             <div className="carousel-item">
-              <img
-                src="img/c-3.jpg"
-                className="d-block w-100 imgCarousel "
-                alt="im2"
+              
+            <img
+                src="img/bg1.jpg"
+                className="d-block w-100 text-center imgCarousel"
+                alt="im1"
               />
+
+
+
+
+
                 <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 1 } }}
-                className="display-1 d-block text-center mx-auto text display-1 px-2 style_heading text-capitalize"
+                className=" d-block   px-2 text-capitalize style_heading text text-center  p-2"
               >
-                find products for shop
+               <div className="display-1 d-block  mx-auto  display-1  text-capitalize"> find products for shop</div>
+
                <NavLink to="/products">
-               <button className="btn btn-dark text-capitalize" style={{fontSize:'20px'}}>shop now</button>
+               <button className="btn btn-dark text-capitalize my-2" style={{fontSize:'20px'}}>shop now</button>
                </NavLink>
               </motion.div>
             </div>

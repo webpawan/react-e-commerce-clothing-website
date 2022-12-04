@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img/logo.jpg";
+// import logo from "../img/logo.jpg";
 import icons from '../img/icons.png'
 import { NavLink } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container-fluid mx-auto bg-dark text-light  p-5">
         <div className="row ">
           <div className="col-10 col-md-4 col-lg-3 text-right mx-auto">
-            <img src={logo} alt="logo" className="logo mx-2" /> Fashion Factory
+            {/* <img src={logo} alt="logo" className="logo mx-2" /> Fashion Factory */}
 
             <p className='my-2'>Address: Lorem ipsum dolor sit amet.</p>
           <p className="my-2">Phone: +65 11.188.888</p>

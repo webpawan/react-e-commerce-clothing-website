@@ -41,7 +41,7 @@ return  <motion.div initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0,tran
           </div>
         </div>
         <NavLink to='/products'>
-        <motion.button initial={{opacity:0,y:20}} whileInView={{opacity:1,y:-20,transition:{delay:.6, type: "spring", stiffness: 100}}}  className="btn btn-outline-dark mt-5 text-capitalize">
+        <motion.button whileInView={{opacity:1,y:0,transition:{delay:.5,duration:.5}}} initial={{opacity:0,y:10}} className="btn btn-outline-dark mt-5 text-capitalize">
           more products
         </motion.button>
         </NavLink>

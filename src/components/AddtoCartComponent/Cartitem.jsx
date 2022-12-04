@@ -14,7 +14,7 @@ const Cartitem = ({id,name,img,color,price,amount}) => {
               </div>
               <div className="mx-2  ">
                 <h5>{name}</h5>
-                <h6>color <button className="btn p-1" style={{backgroundColor:color}}></button></h6>
+                <h6>color <button className="btn p-1" style={{backgroundColor:color,border:"1px solid black"}}></button></h6>
               </div>
             </div>
             <div className="col-2 mx-auto text-center cart_hide">

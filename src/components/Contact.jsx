@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Heading from "./utility/Heading";
 
 const Contact = () => {
   return (
@@ -11,9 +12,8 @@ const Contact = () => {
       <div className="container mx-auto my-4">
         <div className="row mx-atuo text-center">
           <div className="col-11 mx-auto">
-            <h1 className="text-capitalize heading underline d-inline px-2">
-              contact
-            </h1>
+           
+            <Heading name="Contact"/>
           </div>
         </div>
         <div className="row mx-auto my-5">
@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
             <div className="mb-4">
               <h4 className="text-capitalize "> sagar</h4>
-              <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, voluptas?</h6>
+              <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, porro!</h6>
             </div>
             <div className="mb-4">
               <h4 className="text-capitalize "> bhopal</h4>

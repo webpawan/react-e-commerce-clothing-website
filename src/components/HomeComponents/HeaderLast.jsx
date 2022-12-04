@@ -28,7 +28,7 @@ return  <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0,tra
   <img src={img} alt="img" />
  <div className="details_header__products  w-50 ">
  <p className="text-center">{name.slice(0,25)}</p>
-  <p>&#x20B9; {price}</p>
+  <p>{price}</p>
  </div>
 </div>
 </motion.div>

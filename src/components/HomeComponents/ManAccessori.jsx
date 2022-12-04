@@ -2,7 +2,7 @@ import React from "react";
 import { useProduct } from "../Context/ProductContext";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import Heading from '../utility/Heading'
 const ManAccessori = () => {
   const { isLoading, accessory } = useProduct();
 
@@ -12,15 +12,6 @@ const ManAccessori = () => {
 
   return (
     <>
-{/* 
-drag
-   dragConstraints={{
-     top: -30,
-     left: -50,
-     right: 0,
-     bottom: 50,
-     
-   }} */}
 
 
 
@@ -29,9 +20,7 @@ drag
           {accessory.map((curElem,index)=>{
 const {name,id} = curElem;
 return <div className="col" key={index}>
-<h2 className="text-light d-inline py-2 radius-5 heading underline text-capitalize">
-{name}
-</h2>
+<Heading name={name} textCol="text-light"/>
 
 <h6 className="text-white my-5 w-50  mx-auto">
   <motion.span drag  dragConstraints={{
@@ -39,7 +28,6 @@ return <div className="col" key={index}>
      left: -50,
      right: 0,
      bottom: 50,
-     
    }}
     className="d-block special text-capitalize mb-3"
     style={{ fontSize: "3.5rem" }}

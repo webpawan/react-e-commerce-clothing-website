@@ -118,7 +118,6 @@ const FilterSection = () => {
             return (
               <motion.button
               whileTap={{y:-5}}
-
                 key={index}
                 style={{ backgroundColor: bgColor }}
                 className="btn_style btn_active"

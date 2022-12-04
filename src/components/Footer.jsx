@@ -14,7 +14,7 @@ const Footer = () => {
 
             <p className='my-2'>Address: Lorem ipsum dolor sit amet.</p>
           <p className="my-2">Phone: +65 11.188.888</p>
-          <p className="mb-4">Email: hello.com</p>
+          <p className="mb-4">Email: @gmail.com</p>
           <hr className='w-75'/>
           <div className="icons d-flex justify-content-between align-items-right flex-wrap w-75 ">
           
@@ -39,7 +39,7 @@ const Footer = () => {
             <NavLink to='/about' className="nav-link">
            <p className="my-2">Contact us</p>
            </NavLink>
-            <p className="my-2">Services</p>
+            <p className="my-2">Serivius</p>
           </div>
           <div className="col-10 col-md-4 col-lg-3 text-right my-2 mx-auto">
             <h4 className="my-2">My Account</h4>
@@ -59,7 +59,7 @@ const Footer = () => {
             <p className="my-2">Get E-mail updates about our latest shop and special offers.</p>
             <div className="mb-3 ">
   <label  className="form-label" >Email address </label>
-  <input type="email" className="form-control text-capitalize" id="" placeholder="enter email " />
+  <input type="email" className="form-control"  placeholder="enter email" />
   <button className="btn btn-outline-light my-2">sign in</button>
 </div>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="row ">
           <hr/>
     <div className="col d-flex justify-content-between align-items-center flex-wrap">
-    <p className="d-inline ">Copyright ©2022 All rights reserved Nahi ha By <span className="text-capitalize">( pawan saini ) </span>( 😂 i am unemployed,currently i am looking for Good job)</p>
+    <p className="d-inline ">Copyright ©2022 All rights reserved Nahi ha By <span className="text-capitalize">( pawan saini ) </span>( 😂 i am unemployed,currently i am looking for job)</p>
           <img src={icons} alt="logo" className="img-fluid " />
     </div>
         </div>

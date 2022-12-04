@@ -14,7 +14,7 @@ const ProductList = ({ filter_products }) => {
             const { id, name, desc, img, price } = Productsdata;
             return (
               <div className="col-11 col-md-6 col-lg-4 mb-3 mx-auto " key={id}>
-                <motion.div className="card"
+                <motion.div className="card hover_shadow"
                 whileHover={{y:-10}}
                 initial={{opacity:0,y:-50}}
                 animate={{opacity:1,y:0,transition:{delay:.4,duration:1}} }>
@@ -28,7 +28,7 @@ const ProductList = ({ filter_products }) => {
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text d-flex justify-content-between">
                       <span> {desc.slice(0,40)}</span>
-                      <span>&#x20B9; {price}</span>
+                      <span> {price}</span>
                     </p>
                     <NavLink
                       to={`/singleproduct/${id}`}

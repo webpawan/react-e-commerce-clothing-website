@@ -4,7 +4,7 @@ import {
   useReducer,
   useContext,
   createContext,
-  useState,
+  
 } from "react";
 import reducer from "../reducer/productreduces";
 
@@ -25,24 +25,10 @@ const initialState = {
 // ----------------------------------------------------main function
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
- const [page, setPage] = useState(1);
+ 
   // pagination -------------
 
-  const previousPage = () => {
-    if(page <= 1){
-      return;
-    }
-
-    setPage(page - 1);
-  };
-
-  const nextPage = () => {
-   if(page === 2){
-    return setPage(1);
-   }
-
-   setPage( page + 1)
-  };
+ 
 
   // ---------------
   const getProducts = async (page) => {
@@ -50,7 +36,7 @@ const AppProvider = ({ children }) => {
     // https://e-commerce-api-production-117c.up.railway.app/data?_page=${page}&_limit=7
 
     try {
-      const api = `https://e-commerce-api-production-117c.up.railway.app/data?_page=${page}&_limit=7`;
+      const api = `https://e-commerce-api-production-117c.up.railway.app/data`;
       const res = await axios.get(api);
       const products = await res.data;
       dispatch({ type: "Set_api_data", payload: products });
@@ -73,17 +59,15 @@ const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    getProducts(page);
-  }, [page]);
+    getProducts();
+  }, []);
 
   return (
     <AppContext.Provider
       value={{
         ...state,
         getSingleProducts,
-        previousPage,
-        nextPage,
-        page,
+        
       }}
     >
       {children}

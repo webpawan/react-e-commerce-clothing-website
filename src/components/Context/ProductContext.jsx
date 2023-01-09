@@ -36,7 +36,7 @@ const AppProvider = ({ children }) => {
     // https://e-commerce-api-production-117c.up.railway.app/data?_page=${page}&_limit=7
 
     try {
-      const api = `https://e-commerce-api-production-117c.up.railway.app/data`;
+      const api = `https://e-commerce-api-production-8bdc.up.railway.app/data`;
       const res = await axios.get(api);
       const products = await res.data;
       dispatch({ type: "Set_api_data", payload: products });

@@ -6,15 +6,13 @@ import Contact from "./components/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Error from "./components/Error";
 import SingleProducts from "./components/SingleProducts";
-// import Footer from "./components/Footer";
-// import Navbar from "./components/Navbar";
 import AddtoCard from "./components/AddtoCard";
 
 function App() {
   return (
     <>
       <Router>
-        {/* <Navbar/> */}
+     
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
@@ -25,7 +23,7 @@ function App() {
           <Route path="*" element={<Error />} />
           
         </Routes>
-        {/* <Footer /> */}
+        
       </Router>
     </>
   );

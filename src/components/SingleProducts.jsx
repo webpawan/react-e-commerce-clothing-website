@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import SingleCartData from "./SingleProductComponent/SingleCartData";
 import loader from "./img/loderBig.gif" 
-const API = "https://e-commerce-api-production-117c.up.railway.app/data";
+const API = "https://e-commerce-api-production-8bdc.up.railway.app/data";
 const SingleProducts = () => {
   const { getSingleProducts, isSingleLoading, singleProducts } = useProduct();
   const { id } = useParams();
